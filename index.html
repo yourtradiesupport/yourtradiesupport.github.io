@@ -4,95 +4,182 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Tradie Support</title>
+
   <style>
-    /* General Styles */
-    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f4f4f9; color:#333; line-height:1.6; }
-    a { color:#e67e22; text-decoration:none; }
-    a:hover { text-decoration:underline; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6f8;
+      color: #333;
+      line-height: 1.6;
+    }
 
-    /* Header */
-    header { background:#2c3e50; color:white; padding:2rem 1rem; text-align:center; }
-    header img { max-width:150px; margin-bottom:1rem; display:block; margin-left:auto; margin-right:auto; }
-    header h1 { margin:0; font-size:2.2rem; }
-    header p { font-size:1.2rem; margin-top:0.5rem; font-style:italic; color:#f39c12; }
+    header {
+      background: linear-gradient(135deg, #2c3e50, #34495e);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
 
-    /* Sections */
-    section { padding:2rem 1rem; max-width:1000px; margin:auto; }
+    header img {
+      max-width: 160px;
+      margin-bottom: 1rem;
+    }
 
-    /* Section Titles */
-    h2 { color:#2c3e50; margin-top:2rem; text-align:center; }
-    h3 { color:#34495e; margin-top:1rem; }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
 
-    /* Cards */
-    .service-card { background:white; padding:2rem; margin:1.5rem 0; border-radius:10px; box-shadow:0 6px 20px rgba(0,0,0,0.1); }
-    .service-card h3 { margin-bottom:0.5rem; color:#e67e22; }
-    .service-card ul, .service-card ol { padding-left:1.5rem; }
-    .service-card p strong { color:#2c3e50; }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      font-style: italic;
+      color: #f1c40f;
+    }
 
-    /* CTA Button */
-    .cta { background:#e67e22; color:white; display:inline-block; padding:1rem 2rem; text-decoration:none; border-radius:5px; margin-top:1rem; font-weight:bold; }
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2.5rem 1rem;
+    }
 
-    /* Footer */
-    footer { text-align:center; padding:2rem 1rem; background:#2c3e50; color:white; margin-top:2rem; }
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 2rem;
+    }
+
+    .intro {
+      text-align: center;
+      font-size: 1.1rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #e67e22;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #2c3e50;
+    }
+
+    .cta {
+      display: inline-block;
+      background: #e67e22;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+
+    .cta:hover {
+      background: #cf711c;
+    }
+
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
   </style>
 </head>
+
 <body>
 
 <header>
-  <!-- Add your actual logo file here -->
   <img src="logo.png" alt="Your Tradie Support Logo">
   <h1>Your Tradie Support</h1>
   <p>Your admin & marketing support partner</p>
 </header>
 
 <section>
-  <p>I help tradies and cleaning businesses with quotes, invoices, and basic marketing so you can spend less time on paperwork.</p>
+  <p class="intro">
+    I help tradies and cleaning businesses with quotes, invoices, and basic marketing — so you can spend less time on paperwork and more time on the tools.
+  </p>
 </section>
 
 <section>
   <h2>Services</h2>
 
-  <div class="service-card">
-    <h3>1. Invoices & Quotes</h3>
-    <p>We manage your quotes and invoices so you can focus on the job.</p>
-    <p><strong>To begin:</strong> Provide your business name, logo, and bank account number.</p>
-    <p><strong>Once set up:</strong> All we need from you is the customer details (name, address, email), job description, price, and payment method (message or text).</p>
+  <div class="card">
+    <h3>Invoices & Quotes</h3>
+
+    <p class="highlight">To get started, we’ll need:</p>
     <ul>
-      <li>Creating professional quotes quickly</li>
-      <li>Sending invoices to clients promptly</li>
-      <li>Tracking payments and reminders</li>
+      <li>Your business name</li>
+      <li>Your logo</li>
+      <li>Your bank account number</li>
+    </ul>
+
+    <p class="highlight">Once set up, all you need to send is:</p>
+    <ul>
+      <li>Customer name, address, and email</li>
+      <li>Job description</li>
+      <li>Price</li>
+      <li>How and when you expect payment (text or message is fine)</li>
+    </ul>
+
+    <ul>
+      <li>Professional quotes created quickly</li>
+      <li>Invoices sent promptly to clients</li>
+      <li>Payment tracking and follow-ups</li>
     </ul>
   </div>
 
-  <div class="service-card">
-    <h3>2. Basic Marketing</h3>
-    <p>We help your business get noticed online with simple, effective marketing.</p>
-    <p><strong>To begin:</strong> Share your social media accounts (or we can create them), business info, and branding materials.</p>
-    <p><strong>Once set up:</strong> We post updates, monitor reviews, and ensure your online presence stays active and consistent.</p>
+  <div class="card">
+    <h3>Basic Marketing</h3>
+
+    <p class="highlight">Initial setup includes:</p>
+    <ul>
+      <li>Business information and branding</li>
+      <li>Access to existing profiles (or we create them)</li>
+    </ul>
+
+    <p class="highlight">Ongoing support:</p>
     <ul>
       <li>Google Business Profile setup and updates</li>
-      <li>Facebook and Neighbourly posts to engage local customers</li>
+      <li>Facebook and Neighbourly posts</li>
       <li>Builderscrack profile setup and monitoring</li>
-      <li>Simple, repeatable marketing tasks</li>
+      <li>Simple, repeatable marketing to keep your business visible</li>
     </ul>
   </div>
 
-  <div class="service-card">
+  <div class="card">
     <h3>How It Works</h3>
-    <ol>
-      <li><strong>Send us your tasks:</strong> Email your quotes, invoices, or marketing updates.</li>
-      <li><strong>We handle them:</strong> Prepare, format, and send quotes or invoices, and manage your online profiles.</li>
-      <li><strong>You focus on your work:</strong> Spend more time on the job site while we take care of admin and marketing.</li>
-      <li><strong>No contracts:</strong> Pay as you go, with full flexibility.</li>
-    </ol>
-    <p>Everything is transparent — you can track what’s done and review results whenever you like.</p>
+    <ul>
+      <li><strong>You send the details</strong> — email or message</li>
+      <li><strong>I handle the admin</strong> — quotes, invoices, or marketing</li>
+      <li><strong>You stay focused on the job</strong></li>
+      <li><strong>No contracts</strong> — pay as you go, full flexibility</li>
+    </ul>
   </div>
 </section>
 
-<section>
+<section style="text-align:center;">
   <h2>Contact</h2>
   <p>Email: <a href="mailto:yourtradiesupp@gmail.com">yourtradiesupp@gmail.com</a></p>
-  <a href="mailto:yourtradiesupp@gmail.com" class="cta">Get in Touch</a>
+  <a class="cta" href="mailto:yourtradiesupp@gmail.com">Get in Touch</a>
 </section>
 
 <footer>
