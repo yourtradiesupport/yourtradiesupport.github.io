@@ -110,11 +110,12 @@
     <div class="max-w-xl mx-auto px-6 text-center">
       <h2 class="text-3xl font-bold mb-6">Get Started Today</h2>
 
-      <form class="space-y-4">
-        <input type="text" placeholder="Name" class="w-full p-3 rounded text-black" />
-        <input type="email" placeholder="Email" class="w-full p-3 rounded text-black" />
-        <input type="text" placeholder="Business Type" class="w-full p-3 rounded text-black" />
-        <textarea placeholder="Task Description" class="w-full p-3 rounded text-black"></textarea>
+      <!-- WORKING FORM -->
+      <form action="send_task.php" method="POST" class="space-y-4">
+        <input type="text" name="name" placeholder="Name" class="w-full p-3 rounded text-black" required />
+        <input type="email" name="email" placeholder="Email" class="w-full p-3 rounded text-black" required />
+        <input type="text" name="businessType" placeholder="Business Type" class="w-full p-3 rounded text-black" />
+        <textarea name="taskDescription" placeholder="Task Description" class="w-full p-3 rounded text-black" required></textarea>
 
         <button
           type="submit"
@@ -125,8 +126,8 @@
       </form>
 
       <p class="mt-8">
-        Email: yourtradiesupp@gmail.com<br />
-        Phone: 021 086 90193
+        Email: <a href="mailto:yourtradiesupp@gmail.com" class="underline">yourtradiesupp@gmail.com</a><br />
+        Phone: <a href="tel:02108690193" class="underline">021 086 90193</a>
       </p>
     </div>
   </section>
