@@ -3,188 +3,144 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Tradie Support</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f4f6f8;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    header {
-      background: linear-gradient(135deg, #2c3e50, #34495e);
-      color: white;
-      text-align: center;
-      padding: 3rem 1rem;
-    }
-
-    header img {
-      max-width: 160px;
-      margin-bottom: 1rem;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-
-    header p {
-      margin-top: 0.5rem;
-      font-size: 1.2rem;
-      font-style: italic;
-      color: #f1c40f;
-    }
-
-    section {
-      max-width: 1000px;
-      margin: auto;
-      padding: 2.5rem 1rem;
-    }
-
-    h2 {
-      text-align: center;
-      color: #2c3e50;
-      margin-bottom: 2rem;
-    }
-
-    .intro {
-      text-align: center;
-      font-size: 1.1rem;
-    }
-
-    .card {
-      background: white;
-      border-radius: 10px;
-      padding: 2rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-    }
-
-    .card h3 {
-      margin-top: 0;
-      color: #e67e22;
-    }
-
-    ul {
-      padding-left: 1.2rem;
-    }
-
-    li {
-      margin-bottom: 0.5rem;
-    }
-
-    .highlight {
-      font-weight: bold;
-      color: #2c3e50;
-    }
-
-    .cta {
-      display: inline-block;
-      background: #e67e22;
-      color: white;
-      padding: 1rem 2rem;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 1rem;
-    }
-
-    .cta:hover {
-      background: #cf711c;
-    }
-
-    footer {
-      background: #2c3e50;
-      color: white;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-  </style>
+  <title>Tradie Admin Support</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body class="font-sans bg-gray-50 text-gray-800">
 
-<body>
+  <!-- Header / Hero -->
+  <header class="bg-blue-600 text-white">
+    <div class="container mx-auto flex items-center justify-between p-6">
+      <div class="flex items-center space-x-4">
+        <img src="logo.png" alt="Your Logo" class="h-12 w-auto">
+        <h1 class="text-2xl font-bold">Admin support that gets the paperwork sorted — fast.</h1>
+      </div>
+      <a href="#contact" class="bg-white text-blue-600 px-4 py-2 rounded hover:bg-gray-100">Let’s Get Started</a>
+    </div>
+    <div class="text-center py-12 px-6">
+      <p class="text-xl md:text-2xl">Invoices, quotes & marketing done fast, so you can focus on your trade.</p>
+      <a href="#contact" class="mt-6 inline-block bg-white text-blue-600 px-6 py-3 rounded font-semibold hover:bg-gray-100">Get Started</a>
+    </div>
+  </header>
 
-<header>
-  <img src="logo.png" alt="Your Tradie Support Logo">
-  <h1>Your Tradie Support</h1>
-  <p>Your admin & marketing support partner</p>
-</header>
+  <!-- Services -->
+  <section class="container mx-auto py-12 px-6">
+    <h2 class="text-3xl font-bold text-center mb-8">Services That Make Your Life Easier</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="bg-white p-6 rounded shadow text-center">
+        <div class="text-4xl mb-4">💼</div>
+        <h3 class="text-xl font-semibold mb-2">Invoices & Quotes</h3>
+        <p>Professional, accurate, and fast — get paid on time without chasing paperwork.</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow text-center">
+        <div class="text-4xl mb-4">📈</div>
+        <h3 class="text-xl font-semibold mb-2">Marketing Support</h3>
+        <p>Get discovered locally online — no tech skills required.</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow text-center">
+        <div class="text-4xl mb-4">📧</div>
+        <h3 class="text-xl font-semibold mb-2">Task Management</h3>
+        <p>Email us your admin, we take care of it — you focus on your trade.</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow text-center">
+        <div class="text-4xl mb-4">🛠️</div>
+        <h3 class="text-xl font-semibold mb-2">Ongoing Support</h3>
+        <p>Reliable, practical help whenever you need it — no long contracts.</p>
+      </div>
+    </div>
+  </section>
 
-<section>
-  <p class="intro">
-    I help tradies and cleaning businesses with quotes, invoices, and basic marketing — so you can spend less time on paperwork and more time on the tools.
-  </p>
-</section>
+  <!-- How It Works -->
+  <section class="bg-gray-100 py-12 px-6">
+    <h2 class="text-3xl font-bold text-center mb-8">Simple, Straightforward, Done</h2>
+    <div class="grid md:grid-cols-3 gap-8 text-center">
+      <div class="bg-white p-6 rounded shadow">
+        <div class="text-4xl mb-4">✉️</div>
+        <h3 class="text-xl font-semibold mb-2">Send the Details</h3>
+        <p>Email your tasks, quotes, or invoices.</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow">
+        <div class="text-4xl mb-4">⚡</div>
+        <h3 class="text-xl font-semibold mb-2">We Handle the Work</h3>
+        <p>Fast, accurate, and professional.</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow">
+        <div class="text-4xl mb-4">✅</div>
+        <h3 class="text-xl font-semibold mb-2">You Approve</h3>
+        <p>Quick review, then you’re done.</p>
+      </div>
+    </div>
+  </section>
 
-<section>
-  <h2>Services</h2>
+  <!-- Why Choose Us -->
+  <section class="container mx-auto py-12 px-6">
+    <h2 class="text-3xl font-bold text-center mb-8">Why Tradies Work With Us</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="text-xl font-semibold mb-2">No Contracts</h3>
+        <p>Flexible, pay-as-you-go support.</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="text-xl font-semibold mb-2">Experience with Tradies</h3>
+        <p>We know your workflow inside out.</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="text-xl font-semibold mb-2">Reliable Support</h3>
+        <p>Nothing gets missed — we’ve got your back.</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="text-xl font-semibold mb-2">Practical Solutions</h3>
+        <p>Admin done right, no fuss.</p>
+      </div>
+    </div>
+  </section>
 
-  <div class="card">
-    <h3>Invoices & Quotes</h3>
+  <!-- Testimonials -->
+  <section class="bg-gray-100 py-12 px-6">
+    <h2 class="text-3xl font-bold text-center mb-8">What Tradies Say</h2>
+    <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+      <div class="bg-white p-6 rounded shadow">
+        <p>“Saved me 3 hours a week — invoices done, paid faster!”</p>
+        <p class="mt-2 font-semibold">– Local Tradie</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow">
+        <p>“Finally someone who understands tradies and paperwork.”</p>
+        <p class="mt-2 font-semibold">– Plumbing Co.</p>
+      </div>
+    </div>
+  </section>
 
-    <p class="highlight">To get started, we’ll need:</p>
-    <ul>
-      <li>Your business name</li>
-      <li>Your logo</li>
-      <li>Your bank account number</li>
-    </ul>
+  <!-- Contact Form -->
+  <section id="contact" class="container mx-auto py-12 px-6">
+    <h2 class="text-3xl font-bold text-center mb-8">Get Started Today</h2>
+    <form class="max-w-2xl mx-auto bg-white p-6 rounded shadow space-y-4">
+      <div>
+        <label class="block font-semibold mb-1" for="name">Name</label>
+        <input class="w-full border border-gray-300 rounded px-3 py-2" type="text" id="name" required>
+      </div>
+      <div>
+        <label class="block font-semibold mb-1" for="email">Email</label>
+        <input class="w-full border border-gray-300 rounded px-3 py-2" type="email" id="email" required>
+      </div>
+      <div>
+        <label class="block font-semibold mb-1" for="business">Business Type</label>
+        <input class="w-full border border-gray-300 rounded px-3 py-2" type="text" id="business" required>
+      </div>
+      <div>
+        <label class="block font-semibold mb-1" for="task">Task Description</label>
+        <textarea class="w-full border border-gray-300 rounded px-3 py-2" id="task" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded font-semibold hover:bg-blue-700">Send Task</button>
+    </form>
+  </section>
 
-    <p class="highlight">Once set up, all you need to send is:</p>
-    <ul>
-      <li>Customer name, address, and email</li>
-      <li>Job description</li>
-      <li>Price</li>
-      <li>How and when you expect payment (text or message is fine)</li>
-    </ul>
-
-    <ul>
-      <li>Professional quotes created quickly</li>
-      <li>Invoices sent promptly to clients</li>
-      <li>Payment tracking and follow-ups</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h3>Basic Marketing</h3>
-
-    <p class="highlight">Initial setup includes:</p>
-    <ul>
-      <li>Business information and branding</li>
-      <li>Access to existing profiles (or we create them)</li>
-    </ul>
-
-    <p class="highlight">Ongoing support:</p>
-    <ul>
-      <li>Google Business Profile setup and updates</li>
-      <li>Facebook and Neighbourly posts</li>
-      <li>Builderscrack profile setup and monitoring</li>
-      <li>Simple, repeatable marketing to keep your business visible</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h3>How It Works</h3>
-    <ul>
-      <li><strong>You send the details</strong> — email or message</li>
-      <li><strong>I handle the admin</strong> — quotes, invoices, or marketing</li>
-      <li><strong>You stay focused on the job</strong></li>
-      <li><strong>No contracts</strong> — pay as you go, full flexibility</li>
-    </ul>
-  </div>
-</section>
-
-<section style="text-align:center;">
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:yourtradiesupp@gmail.com">yourtradiesupp@gmail.com</a></p>
-  <a class="cta" href="mailto:yourtradiesupp@gmail.com">Get in Touch</a>
-</section>
-
-<footer>
-  &copy; 2026 Your Tradie Support
-</footer>
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white py-6 mt-12">
+    <div class="container mx-auto text-center space-y-2">
+      <p>Email: <a href="mailto:info@yourdomain.com" class="underline">info@yourdomain.com</a> | Phone: 0123 456 789</p>
+      <p>Admin support built for tradies — simple, fast, reliable.</p>
+    </div>
+  </footer>
 
 </body>
 </html>
