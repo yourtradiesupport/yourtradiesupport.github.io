@@ -14,9 +14,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers = "From: $email";
 
     if (mail($to, $subject, $message, $headers)) {
-        echo "<p>Thanks! Your task has been sent successfully.</p>";
+        echo "<p style='color: green; text-align:center; margin-top:20px;'>Thanks! Your task has been sent successfully.</p>";
     } else {
-        echo "<p>Sorry, there was an error sending your task. Please try again later.</p>";
+        echo "<p style='color: red; text-align:center; margin-top:20px;'>Sorry, there was an error sending your task. Please try again later.</p>";
     }
 }
 ?>
