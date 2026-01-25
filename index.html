@@ -110,8 +110,8 @@
     <div class="max-w-xl mx-auto px-6 text-center">
       <h2 class="text-3xl font-bold mb-6">Get Started Today</h2>
 
-      <!-- FORMSPREE FORM -->
-      <form action="https://formspree.io/f/xykeqbag" method="POST" class="space-y-4">
+      <!-- FORMSPREE FORM WITH SUCCESS MESSAGE -->
+      <form id="taskForm" action="https://formspree.io/f/xykeqbag" method="POST" class="space-y-4">
         <input type="text" name="name" placeholder="Name" class="w-full p-3 rounded text-black" required />
         <input type="email" name="email" placeholder="Email" class="w-full p-3 rounded text-black" required />
         <input type="text" name="businessType" placeholder="Business Type" class="w-full p-3 rounded text-black" />
@@ -125,6 +125,9 @@
         </button>
       </form>
 
+      <!-- MESSAGE AREA -->
+      <div id="formMessage" class="mt-4 text-lg font-semibold"></div>
+
       <p class="mt-8">
         Email: <a href="mailto:yourtradiesupp@gmail.com" class="underline">yourtradiesupp@gmail.com</a><br />
         Phone: <a href="tel:02108690193" class="underline">021 086 90193</a>
@@ -136,6 +139,42 @@
   <footer class="bg-gray-800 text-white text-center py-6">
     Admin support built for tradies — simple, fast, reliable.
   </footer>
+
+  <!-- JAVASCRIPT FOR SUCCESS MESSAGE -->
+  <script>
+    const form = document.getElementById('taskForm');
+    const messageDiv = document.getElementById('formMessage');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const formData = new FormData(form);
+      const action = form.action;
+
+      try {
+        const response = await fetch(action, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+
+        if (response.ok) {
+          messageDiv.textContent = "✅ Thanks! Your task has been sent successfully.";
+          messageDiv.classList.remove('text-red-500');
+          messageDiv.classList.add('text-green-500');
+          form.reset();
+        } else {
+          throw new Error('Form submission error');
+        }
+      } catch (error) {
+        messageDiv.textContent = "❌ Sorry, there was an error sending your task. Please try again later.";
+        messageDiv.classList.remove('text-green-500');
+        messageDiv.classList.add('text-red-500');
+      }
+    });
+  </script>
 
 </body>
 </html>
