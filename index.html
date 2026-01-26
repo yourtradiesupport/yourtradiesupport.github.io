@@ -5,14 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Tradie Support</title>
   <style>
+    /* GENERAL */
+    html { scroll-padding-top: 150px; } /* offset for sticky header */
     body { font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6; color:#333; }
-    header { background:#1a73e8; color:#fff; padding:2rem 1rem; text-align:center; position:sticky; top:0; z-index:1000; }
+    
+    /* HEADER / LOGO + NAV */
+    header { background:#1a73e8; color:#fff; padding:1rem 1rem; position:sticky; top:0; z-index:1000; text-align:center; }
     header img { max-height:120px; display:block; margin:0 auto; }
     nav { margin-top:1rem; }
     nav a { color:#fff; margin:0 1rem; text-decoration:none; font-weight:bold; }
-    section { padding:2rem 1rem; max-width:1000px; margin:0 auto; }
+    
+    /* HERO SECTION */
+    #hero { display:flex; flex-direction:column; justify-content:center; align-items:center; height:80vh; text-align:center; background:#1a73e8; color:#fff; }
+    #hero h1 { font-size:2.5rem; margin-bottom:1rem; }
+    #hero p { font-size:1.2rem; margin-bottom:1rem; max-width:700px; }
+    .cta-button { display:inline-block; margin-top:1rem; background:#fff; color:#1a73e8; padding:0.75rem 1.5rem; border-radius:4px; text-decoration:none; font-weight:bold; }
+    
+    /* SECTIONS */
+    section { padding:3rem 1rem; max-width:1000px; margin:0 auto; background:#fff; }
     h2 { color:#1a73e8; margin-bottom:1rem; }
     h3 { margin-top:2rem; }
+    
     .highlight { background:#e6f0ff; padding:1rem; border-left:5px solid #1a73e8; margin-bottom:2rem; }
     .package { border:1px solid #ccc; padding:1rem; margin:1rem 0; border-radius:8px; }
     .package h4 { margin:0 0 0.5rem 0; color:#1a73e8; }
@@ -20,22 +33,24 @@
     .contact-form input, .contact-form textarea { width:100%; padding:0.5rem; margin-bottom:1rem; border:1px solid #ccc; border-radius:4px; }
     .contact-form button { background:#1a73e8; color:#fff; border:none; padding:0.75rem 1.5rem; border-radius:4px; cursor:pointer; font-size:1rem; }
     footer { background:#f4f4f4; text-align:center; padding:2rem 1rem; margin-top:2rem; font-size:0.9rem; color:#555; }
+    
+    /* ABOUT / STORY SIDE-BY-SIDE */
     .side-by-side { display:flex; gap:2rem; flex-wrap:wrap; margin-bottom:2rem; }
     .side-by-side > div { flex:1; min-width:300px; }
-    .cta-button { display:inline-block;margin-top:1rem;background:#1a73e8;color:#fff;padding:0.75rem 1.5rem;border-radius:4px;text-decoration:none; }
-    @media(max-width:800px) { .side-by-side { flex-direction:column; } }
+    
+    /* MOBILE RESPONSIVE */
+    @media(max-width:800px) { .side-by-side { flex-direction:column; } #hero h1 { font-size:2rem; } #hero p { font-size:1rem; } }
   </style>
 </head>
 <body>
 
-<!-- HEADER / LOGO & NAV -->
+<!-- HEADER / LOGO + NAV -->
 <header>
   <img src="logo.png" alt="Your Tradie Support Logo">
   <nav>
-    <a href="#hero">Home</a>
+    <a href="#about-story">About</a>
     <a href="#pricing">Pricing</a>
     <a href="#faq">FAQ</a>
-    <a href="#about-story">About</a>
     <a href="#contact">Get Started</a>
   </nav>
 </header>
@@ -44,7 +59,7 @@
 <section id="hero">
   <h1>Your Tradie Support</h1>
   <p>Admin, systems & support done for tradies so you can focus on the tools.</p>
-  <p><strong>Invoicing, paperwork, quotes, job bookings & more — simple, flexible, reliable.</strong></p>
+  <p>Invoicing, paperwork, quotes, job bookings & more — simple, flexible, reliable.</p>
   <a href="#contact" class="cta-button">Get Started Today</a>
 </section>
 
@@ -62,113 +77,90 @@
 
 <!-- PRICING SECTION -->
 <section id="pricing">
-  <h2>✅ Best Pricing Structure for Your Tradie Support</h2>
-
+  <h2>Pricing</h2>
   <div class="highlight">
-    <h3>1️⃣ Pay-As-You-Go (Perfect Entry Point)</h3>
+    <h3>Pay-As-You-Go (Perfect Entry Point)</h3>
     <p><strong>$20 per admin task</strong></p>
     <p>Flexible, simple, no contracts. Pay only for the tasks you need, when you need them. Ideal for occasional support or to try our service without commitment.</p>
   </div>
-
-  <div>
-    <h3>2️⃣ Monthly Support Packages</h3>
-
-    <div class="package">
-      <h4>Starter Package</h4>
-      <p>10 admin tasks per month</p>
-      <p><strong>$180 per month</strong></p>
-      <p>Packages are monthly. Any unused tasks can <strong>roll over once</strong> to the next month. Packages can also be adjusted as your workload changes.</p>
-    </div>
-
-    <div class="package">
-      <h4>Standard Package</h4>
-      <p>20 admin tasks per month</p>
-      <p><strong>$340 per month</strong></p>
-      <p>Packages are monthly. Any unused tasks can <strong>roll over once</strong> to the next month. Packages can also be adjusted as your workload changes.</p>
-    </div>
+  <h3>Monthly Support Packages</h3>
+  <div class="package">
+    <h4>Starter Package</h4>
+    <p>10 admin tasks per month</p>
+    <p><strong>$180 per month</strong></p>
+    <p>Packages are monthly. Any unused tasks can <strong>roll over once</strong> to the next month. Packages can also be adjusted as your workload changes.</p>
   </div>
-
-  <div>
-    <h3>3️⃣ Marketing Support</h3>
-    <p>Marketing support starts at <strong>$20 per week</strong>, depending on your needs. This may include basic social media posts, page updates, or admin-related marketing tasks. Larger or ongoing work is quoted individually.</p>
+  <div class="package">
+    <h4>Standard Package</h4>
+    <p>20 admin tasks per month</p>
+    <p><strong>$340 per month</strong></p>
+    <p>Packages are monthly. Any unused tasks can <strong>roll over once</strong> to the next month. Packages can also be adjusted as your workload changes.</p>
   </div>
-
+  <h3>Marketing Support</h3>
+  <p>Marketing support starts at <strong>$20 per week</strong>, depending on your needs. This may include basic social media posts, page updates, or admin-related marketing tasks. Larger or ongoing work is quoted individually.</p>
   <p>Not sure what you need? <a href="#contact">Get in touch</a> and we’ll help you figure out the best option for your business.</p>
 </section>
 
 <!-- FAQ SECTION -->
 <section id="faq">
-  <h2>Frequently Asked Questions (FAQ)</h2>
-
+  <h2>FAQ</h2>
   <div class="faq-item">
     <h3>What services do you offer?</h3>
     <p>We provide admin and business support for tradies, including invoicing & follow-ups, quotes, paperwork & filing, job bookings, and general office admin. Marketing support is offered separately if required.</p>
   </div>
-
   <div class="faq-item">
     <h3>What counts as an admin task?</h3>
     <p>An admin task is one clear, individual action such as creating and sending an invoice (including one standard follow-up), sending a quote, booking a job or appointment, filing or uploading paperwork for a job, or entering job details. Small updates or follow-ups that naturally form part of another task are included. Larger or more complex requests may be broken into multiple tasks or quoted separately.</p>
   </div>
-
   <div class="faq-item">
     <h3>Does sending an invoice include follow-up?</h3>
     <p>Yes. Creating and sending an invoice includes one standard follow-up if payment has not been received. Any additional follow-ups may count as extra admin tasks.</p>
   </div>
-
   <div class="faq-item">
     <h3>How long does it take to action a request?</h3>
     <p>Most standard admin tasks are completed within one business day. Urgent requests can be prioritised if needed — just let us know.</p>
   </div>
-
   <div class="faq-item">
     <h3>How do I send tasks to you?</h3>
     <p>Tasks can be sent via email, text, or Facebook Messenger — whatever works best for you. We’ll confirm once each task has been received and completed.</p>
   </div>
-
   <div class="faq-item">
     <h3>What if my request is bigger than a standard admin task?</h3>
     <p>If a task is more involved than a standard admin task, we’ll let you know before starting and confirm how it will be charged. Larger clean-ups, system setups, or ongoing projects are quoted separately.</p>
   </div>
-
   <div class="faq-item">
     <h3>Do you offer monthly support packages?</h3>
     <p>Yes. Monthly task bundles are perfect for tradies who want regular support. Packages are flexible and can be adjusted as your business needs change.</p>
   </div>
-
   <div class="faq-item">
     <h3>What happens if I don’t use all my monthly tasks?</h3>
     <p>Unused tasks can <strong>roll over once</strong> to the following month. This keeps things fair while giving you flexibility.</p>
   </div>
-
   <div class="faq-item">
     <h3>Do you offer urgent or same-day support?</h3>
     <p>Where possible, yes. Urgent or same-day requests depend on workload and availability.</p>
   </div>
-
   <div class="faq-item">
     <h3>Do I need to sign a contract?</h3>
     <p>No. There are no long-term contracts. Services are flexible to suit your business.</p>
   </div>
-
   <div class="faq-item">
     <h3>Who do you work with?</h3>
     <p>We work with tradies and small businesses, especially sole traders and small teams who want reliable admin support without hiring staff.</p>
   </div>
-
   <div class="faq-item">
     <h3>Why choose Your Tradie Support?</h3>
     <p>We’re a local Taranaki husband-and-wife team with experience in truck driving, logistics, accounts, and admin. We focus on making the paperwork side of business easy.</p>
   </div>
-
   <div class="faq-item">
     <h3>What do you need to get started?</h3>
     <p>All we need is one previous invoice or job sheet as an example. This usually includes company name, bank account details, customer details, and task description. From this, we can start taking work off your plate immediately.</p>
   </div>
 </section>
 
-<!-- CONTACT / GET STARTED -->
+<!-- CONTACT SECTION -->
 <section id="contact">
-  <h2>Get Started / Contact</h2>
+  <h2>Get Started</h2>
   <form class="contact-form" action="mailto:yourtradiesupp@gmail.com" method="post" enctype="text/plain">
     <input type="text" name="name" placeholder="Name" required>
     <input type="email" name="email" placeholder="Email" required>
