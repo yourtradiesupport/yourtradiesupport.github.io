@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Your Tradie Support</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-padding-top:150px; } /* offset for sticky header when scrolling to sections */
+  </style>
 </head>
 
 <body class="bg-gray-100 text-gray-800">
@@ -35,7 +38,7 @@
   </header>
 
   <!-- SERVICES -->
-  <section class="max-w-6xl mx-auto py-16 px-6">
+  <section class="max-w-6xl mx-auto py-16 px-6" id="services">
     <h2 class="text-3xl font-bold text-center mb-12">
       Services That Make Your Life Easier
     </h2>
@@ -90,7 +93,7 @@
   </section>
 
   <!-- ABOUT US SECTION -->
-  <section class="max-w-5xl mx-auto py-16 px-6 text-center">
+  <section class="max-w-5xl mx-auto py-16 px-6 text-center" id="about">
     <h2 class="text-3xl font-bold mb-10">About Your Tradie Support</h2>
 
     <div class="grid md:grid-cols-2 gap-8 text-left">
@@ -109,16 +112,16 @@
       <div class="bg-white p-8 rounded shadow space-y-4">
         <h3 class="text-xl font-semibold mb-2">Our Story</h3>
         <p>
-          I’m an Irish-born lad who moved to New Zealand in 2016. After meeting my wife, we relocated from Auckland to Taranaki in 2021 and now call Stratford home.
+          After meeting my wife, we relocated from Auckland to Taranaki in 2021 and now call Stratford home.
         </p>
         <p>
           Having bought our first home in 2023, we’ve experienced the highs and lows of home ownership.
         </p>
         <p>
-          With different tradies coming through our doors fixing multiple issues, I’ve seen firsthand how much hard work and dedication it takes to run a trade business and maintain great customer relationships — especially in the current financial climate.
+          With different tradies coming through our doors fixing multiple issues, we have seen firsthand how much hard work and dedication it takes to run a trade business and maintain great customer relationships — especially in the current financial climate.
         </p>
         <p>
-          With the birth of our daughter in 2024, I also understand how precious family time is. That’s why helping tradies with tedious and time-consuming admin can make a real difference — so after a hard day on the tools, you can enjoy quality time with your loved ones.
+          With the birth of our daughter in 2024, we also understand how precious family time is. That’s why helping tradies with tedious and time-consuming admin can make a real difference — so after a hard day on the tools, you can enjoy quality time with your loved ones.
         </p>
       </div>
 
@@ -174,9 +177,7 @@
         const response = await fetch(action, {
           method: 'POST',
           body: formData,
-          headers: {
-            'Accept': 'application/json'
-          }
+          headers: { 'Accept': 'application/json' }
         });
 
         if (response.ok) {
