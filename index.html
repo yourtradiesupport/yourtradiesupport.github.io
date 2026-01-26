@@ -6,11 +6,10 @@
   <title>Your Tradie Support</title>
   <style>
     body { font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6; color:#333; }
-    header { background:#1a73e8; color:#fff; padding:2rem 1rem; text-align:center; }
-    header h1 { margin:0; font-size:2.5rem; }
-    nav { background:#fff; padding:1rem; text-align:center; position:sticky; top:0; border-bottom:1px solid #ccc; z-index:1000; }
-    nav a { margin:0 1rem; color:#1a73e8; text-decoration:none; font-weight:bold; }
-    section { padding:3rem 1rem; max-width:900px; margin:0 auto; }
+    header { background:#1a73e8; color:#fff; padding:1rem 1rem; display:flex; align-items:center; justify-content:space-between; }
+    header img { height:50px; }
+    header nav a { color:#fff; margin:0 0.75rem; text-decoration:none; font-weight:bold; }
+    section { padding:2rem 1rem; max-width:1000px; margin:0 auto; }
     h2 { color:#1a73e8; margin-bottom:1rem; }
     h3 { margin-top:2rem; }
     .highlight { background:#e6f0ff; padding:1rem; border-left:5px solid #1a73e8; margin-bottom:2rem; }
@@ -20,26 +19,44 @@
     .contact-form input, .contact-form textarea { width:100%; padding:0.5rem; margin-bottom:1rem; border:1px solid #ccc; border-radius:4px; }
     .contact-form button { background:#1a73e8; color:#fff; border:none; padding:0.75rem 1.5rem; border-radius:4px; cursor:pointer; font-size:1rem; }
     footer { background:#f4f4f4; text-align:center; padding:2rem 1rem; margin-top:2rem; font-size:0.9rem; color:#555; }
-    @media(max-width:600px) { header h1 { font-size:2rem; } }
+    .side-by-side { display:flex; gap:2rem; flex-wrap:wrap; margin-bottom:2rem; }
+    .side-by-side > div { flex:1; min-width:250px; }
+    .cta-button { display:inline-block;margin-top:1rem;background:#1a73e8;color:#fff;padding:0.75rem 1.5rem;border-radius:4px;text-decoration:none; }
+    @media(max-width:600px) { header { flex-direction:column; align-items:flex-start; } header nav { margin-top:1rem; } }
   </style>
 </head>
 <body>
 
-<!-- NAVIGATION -->
-<nav>
-  <a href="#hero">Home</a>
-  <a href="#pricing">Pricing</a>
-  <a href="#faq">FAQ</a>
-  <a href="#about">About</a>
-  <a href="#contact">Get Started</a>
-</nav>
+<!-- HEADER / NAVIGATION -->
+<header>
+  <img src="logo.png" alt="Your Tradie Support Logo">
+  <nav>
+    <a href="#hero">Home</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#faq">FAQ</a>
+    <a href="#about">About</a>
+    <a href="#contact">Get Started</a>
+  </nav>
+</header>
 
 <!-- HERO SECTION -->
 <section id="hero">
   <h1>Your Tradie Support</h1>
   <p>Admin, systems & support done for tradies so you can focus on the tools.</p>
   <p><strong>Invoicing, paperwork, quotes, job bookings & more — simple, flexible, reliable.</strong></p>
-  <a href="#contact" style="display:inline-block;margin-top:1rem;background:#1a73e8;color:#fff;padding:0.75rem 1.5rem;border-radius:4px;text-decoration:none;">Get Started Today</a>
+  <a href="#contact" class="cta-button">Get Started Today</a>
+</section>
+
+<!-- ABOUT & OUR STORY SIDE BY SIDE -->
+<section id="about-story" class="side-by-side">
+  <div>
+    <h2>About Us</h2>
+    <p>Your Tradie Support is run by a local Taranaki husband-and-wife team with experience in truck driving, logistics, accounts, and admin. We understand how busy tradies are and provide reliable support so you can focus on your work, not paperwork.</p>
+  </div>
+  <div>
+    <h2>Our Story</h2>
+    <p>I’m an Irish-born lad who moved to New Zealand in 2016. After meeting my wife, we relocated from Auckland to Taranaki in 2021 and now call Stratford home. Having bought our first home in 2023, we’ve experienced the highs and lows of home ownership. With different tradies coming through our doors fixing multiple issues, I’ve seen firsthand how much hard work and dedication it takes to run a trade business and maintain great customer relationships — especially in the current financial climate. With the birth of our daughter in 2024, I also understand how precious family time is. That’s why helping tradies with tedious and time-consuming admin can make a real difference — so after a hard day on the tools, you can enjoy quality time with your loved ones.</p>
+  </div>
 </section>
 
 <!-- PRICING SECTION -->
@@ -59,14 +76,14 @@
       <h4>Starter Package</h4>
       <p>10 admin tasks per month</p>
       <p><strong>$180 per month</strong></p>
-      <p>Packages are monthly. Any unused tasks can <strong>roll over once</strong> to the next month. Packages can be adjusted as your workload changes.</p>
+      <p>Packages are monthly. Any unused tasks can <strong>roll over once</strong> to the next month. Packages can also be adjusted as your workload changes.</p>
     </div>
 
     <div class="package">
       <h4>Standard Package</h4>
       <p>20 admin tasks per month</p>
       <p><strong>$340 per month</strong></p>
-      <p>Packages are monthly. Any unused tasks can <strong>roll over once</strong> to the next month. Packages can be adjusted as your workload changes.</p>
+      <p>Packages are monthly. Any unused tasks can <strong>roll over once</strong> to the next month. Packages can also be adjusted as your workload changes.</p>
     </div>
   </div>
 
@@ -148,122 +165,25 @@
   </div>
 </section>
 
-<!-- ABOUT SECTION -->
-<section id="about">
-  <h2>About Us</h2>
-  <p>Your Tradie Support is run by a local Taranaki husband-and-wife team with experience in truck driving, logistics, accounts, and admin. We understand how busy tradies are and provide reliable support so you can focus on your work, not paperwork.</p>
-</section>
-
-<!-- CONTACT SECTION -->
+<!-- CONTACT / GET STARTED SECTION -->
 <section id="contact">
   <h2>Get Started / Contact</h2>
   <form class="contact-form" action="mailto:yourtradiesupp@gmail.com" method="post" enctype="text/plain">
     <input type="text" name="name" placeholder="Name" required>
     <input type="email" name="email" placeholder="Email" required>
+    <input type="text" name="business" placeholder="Business Type" required>
     <textarea name="task" placeholder="Describe your task" rows="5" required></textarea>
     <button type="submit">Send Task</button>
   </form>
+  <p>Email: <a href="mailto:yourtradiesupp@gmail.com">yourtradiesupp@gmail.com</a></p>
+  <p>Phone: 021 086 90193</p>
 </section>
 
 <!-- FOOTER -->
 <footer>
   <p>&copy; 2026 Your Tradie Support. All rights reserved.</p>
+  <p>Admin support built for tradies — simple, fast, reliable.</p>
 </footer>
-
-</body>
-  </html          We're here to make your administration and behind-the-scenes tasks easier by handling invoices, quotes, marketing, and any generic administrative work, saving you time and hassle.
-        </p>
-      </div>
-
-      <!-- OUR STORY -->
-      <div class="bg-white p-8 rounded shadow space-y-4">
-        <h3 class="text-xl font-semibold mb-2">Our Story</h3>
-        <p>
-          I’m an Irish-born lad who moved to New Zealand in 2016. After meeting my wife, we relocated from Auckland to Taranaki in 2021 and now call Stratford home.
-        </p>
-        <p>
-          Having bought our first home in 2023, we’ve experienced the highs and lows of home ownership.
-        </p>
-        <p>
-          With different tradies coming through our doors fixing multiple issues, I’ve seen firsthand how much hard work and dedication it takes to run a trade business and maintain great customer relationships — especially in the current financial climate.
-        </p>
-        <p>
-          With the birth of our daughter in 2024, I also understand how precious family time is. That’s why helping tradies with tedious and time-consuming admin can make a real difference — so after a hard day on the tools, you can enjoy quality time with your loved ones.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="bg-blue-600 text-white py-16">
-    <div class="max-w-xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold mb-6">Get Started Today</h2>
-
-      <!-- FORMSPREE FORM -->
-      <form id="taskForm" action="https://formspree.io/f/xykeqbag" method="POST" class="space-y-4">
-        <input type="text" name="name" placeholder="Name" class="w-full p-3 rounded text-black" required />
-        <input type="email" name="email" placeholder="Email" class="w-full p-3 rounded text-black" required />
-        <input type="text" name="businessType" placeholder="Business Type" class="w-full p-3 rounded text-black" />
-        <textarea name="taskDescription" placeholder="Task Description" class="w-full p-3 rounded text-black" required></textarea>
-
-        <button
-          type="submit"
-          class="bg-white text-blue-600 px-6 py-3 rounded font-semibold hover:bg-gray-200"
-        >
-          Send Task
-        </button>
-      </form>
-
-      <div id="formMessage" class="mt-4 text-lg font-semibold"></div>
-
-      <p class="mt-8 text-xl font-bold">
-        Email: <a href="mailto:yourtradiesupp@gmail.com" class="underline">yourtradiesupp@gmail.com</a><br />
-        Phone: <a href="tel:02108690193" class="underline">021 086 90193</a>
-      </p>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="bg-gray-800 text-white text-center py-6">
-    Admin support built for tradies — simple, fast, reliable.
-  </footer>
-
-  <!-- JAVASCRIPT FOR SUCCESS MESSAGE -->
-  <script>
-    const form = document.getElementById('taskForm');
-    const messageDiv = document.getElementById('formMessage');
-
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-
-      const formData = new FormData(form);
-      const action = form.action;
-
-      try {
-        const response = await fetch(action, {
-          method: 'POST',
-          body: formData,
-          headers: {
-            'Accept': 'application/json'
-          }
-        });
-
-        if (response.ok) {
-          messageDiv.textContent = "✅ Thanks! Your task has been sent successfully.";
-          messageDiv.classList.remove('text-red-500');
-          messageDiv.classList.add('text-green-500');
-          form.reset();
-        } else {
-          throw new Error('Form submission error');
-        }
-      } catch (error) {
-        messageDiv.textContent = "❌ Sorry, there was an error sending your task. Please try again later.";
-        messageDiv.classList.remove('text-green-500');
-        messageDiv.classList.add('text-red-500');
-      }
-    });
-  </script>
 
 </body>
 </html>
