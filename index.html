@@ -1,208 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Tradie Support</title>
-  <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    html { scroll-padding-top:150px; } /* offset for sticky header when scrolling to sections */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #2a9d8f;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+    section {
+      padding: 1.5rem;
+      border-bottom: 1px solid #eee;
+    }
+    section:last-child {
+      border-bottom: none;
+    }
+    h2 {
+      color: #2a9d8f;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+    ul {
+      margin: 0.5rem 0 1rem 1.5rem;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      main {
+        margin: 1rem;
+      }
+    }
   </style>
 </head>
+<body>
 
-<body class="bg-gray-100 text-gray-800">
-
-  <!-- HERO -->
-  <header class="bg-white py-28 text-center shadow">
-    <img
-      src="logo.png"
-      alt="Your Tradie Support Logo"
-      class="mx-auto mb-10 max-w-sm"
-    />
-
-    <h1 class="text-3xl font-bold mb-4">
-      Admin support that gets the paperwork sorted — fast.
-    </h1>
-
-    <p class="text-lg mb-10">
-      Invoices, quotes & marketing done fast, so you can focus on your trade.  
-      Contact us to see how we can help.
-    </p>
-
-    <div class="flex justify-center gap-4">
-      <a
-        href="#contact"
-        class="bg-blue-600 text-white px-10 py-4 rounded text-lg font-semibold hover:bg-blue-700"
-      >
-        Get in touch
-      </a>
-      <a
-        href="#about"
-        class="bg-gray-200 text-gray-800 px-10 py-4 rounded text-lg font-semibold hover:bg-gray-300"
-      >
-        About Us
-      </a>
-    </div>
+  <header>
+    <h1>Your Tradie Support</h1>
   </header>
 
-  <!-- SERVICES -->
-  <section class="max-w-6xl mx-auto py-16 px-6" id="services">
-    <h2 class="text-3xl font-bold text-center mb-12">
-      Services That Make Your Life Easier
-    </h2>
+  <main>
+    <!-- Who We Are -->
+    <section>
+      <h2>Who We Are</h2>
+      <p>Your Tradie Support is run by a local Taranaki bloke with experience in logistics, accounts, and admin. I know paperwork is an essential part of any job, but it can be time-consuming, frustrating, and tedious. I’m here to make admin tasks easier by handling:</p>
+      <ul>
+        <li>Invoices</li>
+        <li>Quotes</li>
+        <li>Marketing tasks</li>
+        <li>General administrative work</li>
+      </ul>
+      <p>This saves tradies time, stress, and hassle so they can focus on their tools and their customers.</p>
+    </section>
 
-    <div class="grid md:grid-cols-4 gap-8 text-center">
-      <div class="bg-white p-6 rounded shadow">
-        <h3 class="text-xl font-semibold mb-2">💼 Invoices & Quotes</h3>
-        <p>Professional, accurate, fast and flexible based on your needs.</p>
-      </div>
+    <!-- Our Story -->
+    <section>
+      <h2>Our Story</h2>
+      <p>After moving from Auckland to Taranaki in 2021, I now call Stratford home.</p>
+      <p>Having bought my first home in 2023, I’ve experienced the ups and downs of homeownership. Seeing different tradies come through to fix multiple issues gave me a real insight into how much effort it takes to run a trade business while keeping customers happy—especially in today’s financial climate.</p>
+      <p>With the birth of my daughter in 2024, I also know how precious family time is. That’s why helping tradies with tedious, time-consuming admin can make a real difference—so after a long day on the tools, they can spend more quality time with their loved ones.</p>
+    </section>
 
-      <div class="bg-white p-6 rounded shadow">
-        <h3 class="text-xl font-semibold mb-2">📈 Marketing Support</h3>
-        <p>Get discovered locally online — no tech skills required.</p>
-      </div>
+    <!-- Why We Do It -->
+    <section>
+      <h2>Why We Do It</h2>
+      <p>Admin and paperwork can feel like a never-ending job. I’ve seen tradies struggle to keep up with invoices, quotes, and marketing while trying to run their business. My goal is simple: take care of the behind-the-scenes tasks so tradies can:</p>
+      <ul>
+        <li>Focus on their trade and their clients</li>
+        <li>Reduce stress from paperwork</li>
+        <li>Spend more time with family</li>
+      </ul>
+      <p>It’s about making life easier for hardworking tradies and helping them maintain a better work-life balance.</p>
+    </section>
 
-      <div class="bg-white p-6 rounded shadow">
-        <h3 class="text-xl font-semibold mb-2">📧 Task Management</h3>
-        <p>Email, text or voice note your tasks and we’ll get them sorted for you quickly.</p>
-      </div>
-
-      <div class="bg-white p-6 rounded shadow">
-        <h3 class="text-xl font-semibold mb-2">🛠️ Ongoing Support</h3>
-        <p>Reliable, practical help whenever you need it — pay as you go + no contracts.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- HOW IT WORKS -->
-  <section class="bg-gray-50 py-16">
-    <div class="max-w-5xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center mb-12">
-        Simple, Straightforward, Done
-      </h2>
-
-      <div class="grid md:grid-cols-3 gap-8 text-center">
-        <div class="bg-white p-6 rounded shadow">
-          <h3 class="text-xl font-semibold mb-2">✉️ Send the Details</h3>
-          <p>Email, text or voice note your task, quotes or invoices for completion.</p>
-        </div>
-
-        <div class="bg-white p-6 rounded shadow">
-          <h3 class="text-xl font-semibold mb-2">⚡ We Handle the Work</h3>
-          <p>Fast, accurate, and professional.</p>
-        </div>
-
-        <div class="bg-white p-6 rounded shadow">
-          <h3 class="text-xl font-semibold mb-2">✅ Completed</h3>
-          <p>Job Done.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT US SECTION -->
-  <section class="max-w-5xl mx-auto py-16 px-6 text-center" id="about">
-    <h2 class="text-3xl font-bold mb-10">About Your Tradie Support</h2>
-
-    <div class="grid md:grid-cols-2 gap-8 text-left">
-
-      <!-- WHO WE ARE -->
-      <div class="bg-white p-8 rounded shadow space-y-4">
-        <h3 class="text-xl font-semibold mb-2">Who We Are</h3>
-        <p>
-          Your Tradie Support is run by a local Taranaki husband and wife with experience in truck driving, coordinating logistics, accounts and admin work. 
-          We understand that paperwork is an important part of any job, but it can often be time-consuming, frustrating, and tedious. 
-          We're here to make your administration and behind-the-scenes tasks easier by handling invoices, quotes, marketing, and any generic administrative work, saving you time and hassle.
-        </p>
-      </div>
-
-      <!-- OUR STORY -->
-      <div class="bg-white p-8 rounded shadow space-y-4">
-        <h3 class="text-xl font-semibold mb-2">Our Story</h3>
-        <p>
-          After meeting my wife, we relocated from Auckland to Taranaki in 2021 and now call Stratford home.
-        </p>
-        <p>
-          Having bought our first home in 2023, we’ve experienced the highs and lows of home ownership.
-        </p>
-        <p>
-          With different tradies coming through our doors fixing multiple issues, we have seen firsthand how much hard work and dedication it takes to run a trade business and maintain great customer relationships — especially in the current financial climate.
-        </p>
-        <p>
-          With the birth of our daughter in 2024, we also understand how precious family time is. That’s why helping tradies with tedious and time-consuming admin can make a real difference — so after a hard day on the tools, you can enjoy quality time with your loved ones.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="bg-blue-600 text-white py-16">
-    <div class="max-w-xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold mb-6">Get Started Today</h2>
-
-      <!-- FORMSPREE FORM -->
-      <form id="taskForm" action="https://formspree.io/f/xykeqbag" method="POST" class="space-y-4">
-        <input type="text" name="name" placeholder="Name" class="w-full p-3 rounded text-black" required />
-        <input type="email" name="email" placeholder="Email" class="w-full p-3 rounded text-black" required />
-        <input type="text" name="businessType" placeholder="Business Type" class="w-full p-3 rounded text-black" />
-        <textarea name="taskDescription" placeholder="Task Description" class="w-full p-3 rounded text-black" required></textarea>
-
-        <button
-          type="submit"
-          class="bg-white text-blue-600 px-6 py-3 rounded font-semibold hover:bg-gray-200"
-        >
-          Send Task
-        </button>
-      </form>
-
-      <div id="formMessage" class="mt-4 text-lg font-semibold"></div>
-
-      <p class="mt-8 text-xl font-bold">
-        Email: <a href="mailto:yourtradiesupp@gmail.com" class="underline">yourtradiesupp@gmail.com</a><br />
-        Phone: <a href="tel:02108690193" class="underline">021 086 90193</a>
-      </p>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="bg-gray-800 text-white text-center py-6">
-    Admin support built for tradies — simple, fast, reliable.
-  </footer>
-
-  <!-- JAVASCRIPT FOR SUCCESS MESSAGE -->
-  <script>
-    const form = document.getElementById('taskForm');
-    const messageDiv = document.getElementById('formMessage');
-
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-
-      const formData = new FormData(form);
-      const action = form.action;
-
-      try {
-        const response = await fetch(action, {
-          method: 'POST',
-          body: formData,
-          headers: { 'Accept': 'application/json' }
-        });
-
-        if (response.ok) {
-          messageDiv.textContent = "✅ Thanks! Your task has been sent successfully.";
-          messageDiv.classList.remove('text-red-500');
-          messageDiv.classList.add('text-green-500');
-          form.reset();
-        } else {
-          throw new Error('Form submission error');
-        }
-      } catch (error) {
-        messageDiv.textContent = "❌ Sorry, there was an error sending your task. Please try again later.";
-        messageDiv.classList.remove('text-green-500');
-        messageDiv.classList.add('text-red-500');
-      }
-    });
-  </script>
+    <!-- Contact -->
+    <section>
+      <h2>Get In Touch</h2>
+      <p>If you’re a tradie looking for admin support, send me a message:</p>
+      <ul>
+        <li>Email: <a href="mailto:yourtradiesupp@gmail.com">yourtradiesupp@gmail.com</a></li>
+        <li>Phone: 021 086 90193</li>
+      </ul>
+    </section>
+  </main>
 
 </body>
 </html>
