@@ -10,22 +10,29 @@
   </style>
 </head>
 
-<body class="text-gray-800 relative overflow-x-hidden bg-gradient-to-br from-cyan-50 via-sky-50 to-slate-100">
+<body class="text-gray-800 relative overflow-x-hidden bg-gradient-to-br from-emerald-50 via-sky-50 to-slate-100">
 
   <!-- SOFT COLOUR BACKGROUND -->
   <div class="fixed inset-0 -z-10">
-    <div class="absolute inset-0 bg-gradient-to-br from-cyan-100 via-sky-50 to-slate-100"></div>
+    <!-- soft colour blend -->
+    <div class="absolute inset-0 bg-gradient-to-br from-emerald-100 via-sky-50 to-slate-100"></div>
+
+    <!-- very subtle texture -->
+    <svg class="absolute inset-0 w-full h-full opacity-[0.04]" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern id="dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="1.5" cy="1.5" r="1.5" fill="#0f172a"></circle>
+        </pattern>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#dots)"></rect>
+    </svg>
   </div>
 
   <!-- HERO -->
-  <header class="bg-gradient-to-r from-cyan-100 via-sky-100 to-cyan-50 py-28 text-center shadow">
+  <header class="bg-white/90 backdrop-blur py-28 text-center shadow">
+    <img src="logo.png" alt="Your Tradie Support Logo" class="mx-auto mb-10 max-w-sm"/>
 
-    <!-- COLOUR PANEL BEHIND LOGO -->
-    <div class="inline-block bg-white/60 backdrop-blur-md px-12 py-8 rounded-2xl shadow-md">
-      <img src="logo.png" alt="Your Tradie Support Logo" class="mx-auto max-w-sm"/>
-    </div>
-
-    <h1 class="text-3xl font-bold mt-10 mb-4">
+    <h1 class="text-3xl font-bold mb-4">
       Admin support that gets the paperwork sorted — fast.
     </h1>
 
