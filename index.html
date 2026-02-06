@@ -17,7 +17,7 @@
     <div class="absolute inset-0 bg-gradient-to-br from-cyan-100 via-sky-50 to-slate-100"></div>
   </div>
 
-  <!-- HERO (soft white so logo blends) -->
+  <!-- HERO -->
   <header class="bg-white/95 py-28 text-center shadow">
 
     <img src="logo.png" alt="Your Tradie Support Logo" class="mx-auto mb-10 max-w-sm"/>
@@ -31,29 +31,19 @@
       Contact us to see how we can help.
     </p>
 
-    <!-- UPDATED BUTTONS + LOG A JOB TEXT -->
-    <div class="flex flex-col items-center gap-4">
-      <div class="flex justify-center flex-wrap gap-4">
-        <a href="#about" class="bg-gray-200 text-gray-800 px-10 py-4 rounded text-lg font-semibold hover:bg-gray-300 shadow">
-          About Us
-        </a>
+    <!-- UPDATED BUTTONS -->
+    <div class="flex justify-center gap-4">
+      <a href="#about" class="bg-gray-200 text-gray-800 px-10 py-4 rounded text-lg font-semibold hover:bg-gray-300 shadow">
+        About Us
+      </a>
 
-        <a href="log-a-job.html" class="bg-blue-600 text-white px-10 py-4 rounded text-lg font-semibold hover:bg-blue-700 shadow-lg">
-          Log a Job
-        </a>
+      <a href="#logajob" class="bg-blue-600 text-white px-10 py-4 rounded text-lg font-semibold hover:bg-blue-700 shadow-lg">
+        Log a Job
+      </a>
 
-        <a href="#contact" class="bg-gray-200 text-gray-800 px-10 py-4 rounded text-lg font-semibold hover:bg-gray-300 shadow">
-          Get in touch
-        </a>
-      </div>
-
-      <div class="max-w-2xl text-center text-gray-700">
-        <p class="font-semibold mb-1">Already working with us?</p>
-        <p>
-          Click <strong>Log a Job</strong> to submit job details in under a minute.
-          We’ll create your quote or invoice and send it to your customer — fast.
-        </p>
-      </div>
+      <a href="#contact" class="bg-gray-200 text-gray-800 px-10 py-4 rounded text-lg font-semibold hover:bg-gray-300 shadow">
+        Get in touch
+      </a>
     </div>
   </header>
 
@@ -115,61 +105,30 @@
   <!-- ABOUT -->
   <section class="max-w-5xl mx-auto py-16 px-6 text-center" id="about">
     <h2 class="text-3xl font-bold mb-10">About Your Tradie Support</h2>
+    ...
+  </section>
 
-    <div class="grid md:grid-cols-2 gap-8 text-left">
+  <!-- LOG A JOB SECTION -->
+  <section id="logajob" class="max-w-5xl mx-auto py-20 px-6 text-center">
+    <h2 class="text-3xl font-bold mb-6">Log a Job</h2>
 
-      <div class="bg-white/90 backdrop-blur p-8 rounded-xl shadow-lg border space-y-4">
-        <h3 class="text-xl font-semibold mb-2">Who We Are</h3>
+    <p class="text-lg mb-6 max-w-3xl mx-auto">
+      Already working with us? This is the fastest way to get your quotes and invoices done.
+      No messages, no back and forth. Just fill in the job details and we’ll handle the paperwork for you.
+    </p>
 
-        <p>
-          Your Tradie Support is run by a local Taranaki husband and wife with experience in logistics, accounts, and admin.
-          We know paperwork is an essential part of any job, but it can be time-consuming, frustrating, and tedious.
-        </p>
+    <p class="text-lg mb-10 max-w-3xl mx-auto">
+      Submit the form in under a minute and we’ll prepare your quote or invoice and send it directly to your customer.
+    </p>
 
-        <p class="mt-6">
-          We’re here to make admin tasks easier by handling invoices, quotes, marketing, and general office work — saving tradies time and hassle.
-        </p>
-      </div>
-
-      <div class="bg-white/90 backdrop-blur p-8 rounded-xl shadow-lg border space-y-4">
-        <h3 class="text-xl font-semibold mb-2">Our Story</h3>
-        <p>
-          After moving from Auckland to Taranaki in 2021, we now call Stratford home.
-          <br><br>
-          Having bought our first home in 2023, we’ve experienced the ups and downs of homeownership firsthand.
-          Seeing different tradies coming and going gave us real insight into how much effort it takes to run a trade business while keeping customers happy — especially in today’s financial climate.
-          <br><br>
-          With the birth of our daughter in 2024, we also understand how precious family time is.
-          That’s why helping tradies with tedious, time-consuming admin can make a real difference — so after a long day on the tools, they can enjoy quality time with their loved ones.
-        </p>
-      </div>
-
-    </div>
+    <a href="log-a-job.html" class="bg-blue-600 text-white px-10 py-4 rounded text-lg font-semibold hover:bg-blue-700 shadow-lg">
+      Open Log a Job Form
+    </a>
   </section>
 
   <!-- CONTACT -->
   <section id="contact" class="bg-blue-600 text-white py-16">
-    <div class="max-w-xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold mb-6">Get Started Today</h2>
-
-      <form id="taskForm" action="https://formspree.io/f/xykeqbag" method="POST" class="space-y-4">
-        <input type="text" name="name" placeholder="Name" class="w-full p-3 rounded text-black" required />
-        <input type="email" name="email" placeholder="Email" class="w-full p-3 rounded text-black" required />
-        <input type="text" name="businessType" placeholder="Business Type" class="w-full p-3 rounded text-black" />
-        <textarea name="taskDescription" placeholder="Task Description" class="w-full p-3 rounded text-black" required></textarea>
-
-        <button type="submit" class="bg-white text-blue-600 px-6 py-3 rounded font-semibold hover:bg-gray-200">
-          Send Task
-        </button>
-      </form>
-
-      <div id="formMessage" class="mt-4 text-lg font-semibold"></div>
-
-      <p class="mt-8 text-xl font-bold">
-        Email: <a href="mailto:yourtradiesupp@gmail.com" class="underline">yourtradiesupp@gmail.com</a><br />
-        Phone: <a href="tel:02108690193" class="underline">021 086 90193</a>
-      </p>
-    </div>
+    ...
   </section>
 
   <footer class="bg-gray-800 text-white text-center py-6">
