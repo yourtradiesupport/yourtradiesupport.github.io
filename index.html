@@ -2,221 +2,177 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Your Tradie Support</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    html {
-      scroll-behavior: smooth;
-      scroll-padding-top: 120px;
-    }
+    html { scroll-behavior: smooth; scroll-padding-top:120px; }
   </style>
 </head>
 
-<body class="text-gray-800 relative overflow-x-hidden bg-gradient-to-br from-cyan-50 via-sky-50 to-slate-100">
+<body class="text-gray-800 bg-gradient-to-br from-cyan-50 via-sky-50 to-slate-100">
 
-  <!-- SOFT COLOUR BACKGROUND -->
-  <div class="fixed inset-0 -z-10">
-    <div class="absolute inset-0 bg-gradient-to-br from-cyan-100 via-sky-50 to-slate-100"></div>
+<!-- HERO -->
+<header class="bg-white py-24 text-center shadow">
+
+  <img src="logo.png" alt="Your Tradie Support Logo" class="mx-auto mb-10 max-w-sm"/>
+
+  <h1 class="text-4xl font-bold mb-6">
+    You didn’t start your trade to do invoices at 9pm.
+  </h1>
+
+  <p class="text-xl mb-10">
+    We handle your quotes, invoices and job paperwork so you can finish work and actually switch off.
+  </p>
+
+  <div class="flex justify-center flex-wrap gap-4">
+    <a href="log-a-job.html" class="bg-blue-600 text-white px-10 py-4 rounded text-lg font-semibold hover:bg-blue-700 shadow-lg">
+      Log a Job / Quote / Invoice
+    </a>
+
+    <a href="#contact" class="bg-gray-200 text-gray-800 px-10 py-4 rounded text-lg font-semibold hover:bg-gray-300 shadow">
+      Get in touch
+    </a>
   </div>
 
-  <!-- TOP NAV (simple + fixes anchor scrolling) -->
-  <div class="sticky top-0 z-50 bg-white/90 backdrop-blur shadow">
-    <div class="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
-      <a href="#" class="font-bold text-lg">Your Tradie Support</a>
+  <p class="mt-6 text-gray-600">
+    Takes 60 seconds. We handle the paperwork and send it to your customer.
+  </p>
 
-      <div class="hidden md:flex items-center gap-6 text-sm font-semibold">
-        <a href="#services" class="hover:text-blue-700">Services</a>
-        <a href="#how" class="hover:text-blue-700">How it works</a>
-        <a href="#about" class="hover:text-blue-700">About</a>
-        <a href="#story" class="hover:text-blue-700">Story</a>
-        <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Get started</a>
-      </div>
+</header>
 
-      <a href="#contact" class="md:hidden bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 text-sm font-semibold">
-        Get started
-      </a>
+<!-- SERVICES -->
+<section class="max-w-6xl mx-auto py-20 px-6" id="services">
+  <h2 class="text-3xl font-bold text-center mb-14">What We Handle For You</h2>
+
+  <div class="grid md:grid-cols-4 gap-8 text-center">
+    <div class="bg-white p-6 rounded-xl shadow border">
+      <h3 class="text-xl font-semibold mb-2">Invoices & Quotes</h3>
+      <p>Professional, accurate and sent fast to your customers.</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow border">
+      <h3 class="text-xl font-semibold mb-2">Marketing Support</h3>
+      <p>Helping local tradies get seen online without the hassle.</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow border">
+      <h3 class="text-xl font-semibold mb-2">Task Management</h3>
+      <p>Email, text or voice note your tasks and we’ll handle them.</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow border">
+      <h3 class="text-xl font-semibold mb-2">Ongoing Support</h3>
+      <p>Reliable admin help when you need it — no contracts.</p>
     </div>
   </div>
+</section>
 
-  <!-- HERO (soft white so logo blends) -->
-  <header class="bg-white/95 py-20 md:py-28 text-center shadow">
+<!-- TRUST SECTION -->
+<section class="bg-white py-20 px-6">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-10">Why tradies use Your Tradie Support</h2>
 
-    <img src="logo.png" alt="Your Tradie Support Logo" class="mx-auto mb-10 max-w-sm"/>
+    <div class="space-y-4 text-lg text-left max-w-2xl mx-auto">
+      <p>✔ We work inside your Xero, MYOB, Zoho, Tradify or Simpro</p>
+      <p>✔ We never contact your customers unless instructed</p>
+      <p>✔ Pay as you go — no contracts</p>
+      <p>✔ Real people, not overseas virtual assistants</p>
+      <p>✔ Fast, accurate, and reliable</p>
+    </div>
+  </div>
+</section>
 
-    <h1 class="text-3xl font-bold mb-4">
-      Admin support that gets the paperwork sorted — fast.
-    </h1>
+<!-- HOW IT WORKS -->
+<section class="py-20 px-6" id="how">
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-12">How it works</h2>
 
-    <p class="text-lg mb-10">
-      Invoices, quotes & marketing done fast, so you can focus on your trade.
-      Contact us to see how we can help.
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-xl shadow border">
+        <h3 class="font-semibold mb-2">Send the details</h3>
+        <p>Finish the job → open Log a Job → fill it in.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow border">
+        <h3 class="font-semibold mb-2">We handle the work</h3>
+        <p>We create the quote or invoice and send it to your customer.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow border">
+        <h3 class="font-semibold mb-2">Done</h3>
+        <p>You move onto the next job without paperwork hanging over you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REAL LIFE EXAMPLE -->
+<section class="bg-gray-100 py-16 px-6 text-center">
+  <h2 class="text-2xl font-bold mb-6">How this works in real life</h2>
+  <p class="text-lg">
+    Finish a job → Open Log a Job → Submit details → We send the invoice the same day.
+    <br><br>
+    Simple. No paperwork at night.
+  </p>
+</section>
+
+<!-- ABOUT -->
+<section class="max-w-4xl mx-auto py-20 px-6 text-center" id="about">
+  <h2 class="text-3xl font-bold mb-10">About Your Tradie Support</h2>
+  <p class="text-lg leading-relaxed">
+    Your Tradie Support is run by a husband and wife team with experience in admin, accounts and logistics.
+    <br><br>
+    We saw how many tradies were stuck doing paperwork at night after a full day on the tools — quotes not sent, invoices delayed, admin piling up.
+    <br><br>
+    So we built a simple service that takes that off your plate.
+    <br><br>
+    You do the work. We do the paperwork.
+  </p>
+</section>
+
+<!-- STORY -->
+<section class="max-w-4xl mx-auto pb-20 px-6 text-center" id="story">
+  <h2 class="text-3xl font-bold mb-8">Our Story</h2>
+  <p class="text-lg leading-relaxed">
+    After buying our first home and dealing with multiple tradies ourselves, we saw firsthand how hard it is to run a trade business while keeping customers happy and paperwork up to date.
+    <br><br>
+    With a young family, we understand how important time at home is after a long day.
+    <br><br>
+    That’s why Your Tradie Support exists — to give tradies their evenings back.
+  </p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="bg-blue-600 text-white py-20">
+  <div class="max-w-xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-4">Get Started Today</h2>
+
+    <p class="mb-6 text-lg">
+      New tradies start here. Existing tradies use the Log a Job button above.
     </p>
 
-    <!-- UPDATED BUTTONS + LOG A JOB TEXT -->
-    <div class="flex flex-col items-center gap-4">
-      <div class="flex justify-center flex-wrap gap-4">
-        <a href="#about" class="bg-gray-200 text-gray-800 px-10 py-4 rounded text-lg font-semibold hover:bg-gray-300 shadow">
-          About Us
-        </a>
+    <form action="https://formspree.io/f/xykeqbag" method="POST" class="space-y-4">
+      <input type="text" name="name" placeholder="Name" class="w-full p-3 rounded text-black" required />
+      <input type="email" name="email" placeholder="Email" class="w-full p-3 rounded text-black" required />
+      <input type="text" name="businessType" placeholder="Business Type" class="w-full p-3 rounded text-black" />
+      <textarea name="taskDescription" placeholder="Task Description" class="w-full p-3 rounded text-black" required></textarea>
 
-        <a href="log-a-job.html" class="bg-blue-600 text-white px-10 py-4 rounded text-lg font-semibold hover:bg-blue-700 shadow-lg">
-          Log a Job
-        </a>
+      <button type="submit" class="bg-white text-blue-600 px-6 py-3 rounded font-semibold hover:bg-gray-200">
+        Send Task
+      </button>
+    </form>
 
-        <a href="#contact" class="bg-gray-200 text-gray-800 px-10 py-4 rounded text-lg font-semibold hover:bg-gray-300 shadow">
-          Get in touch
-        </a>
-      </div>
+    <p class="mt-10 text-lg">
+      Email: yourtradiesupp@gmail.com<br>
+      Phone: 021 086 90193
+    </p>
+  </div>
+</section>
 
-      <div class="max-w-2xl text-center text-gray-700">
-        <p class="font-semibold mb-1">Already working with us?</p>
-        <p>
-          Click <strong>Log a Job</strong> to submit job details in under a minute.
-          We’ll create your quote or invoice and send it to your customer — fast.
-        </p>
-      </div>
-    </div>
-  </header>
-
-  <!-- SERVICES -->
-  <section class="max-w-6xl mx-auto py-16 px-6" id="services">
-    <h2 class="text-3xl font-bold text-center mb-12">
-      Services That Make Your Life Easier
-    </h2>
-
-    <div class="grid md:grid-cols-4 gap-8 text-center">
-      <div class="bg-white/90 backdrop-blur p-6 rounded-xl shadow-lg border">
-        <h3 class="text-xl font-semibold mb-2">💼 Invoices & Quotes</h3>
-        <p>Professional, accurate, fast and flexible based on your needs.</p>
-      </div>
-
-      <div class="bg-white/90 backdrop-blur p-6 rounded-xl shadow-lg border">
-        <h3 class="text-xl font-semibold mb-2">📈 Marketing Support</h3>
-        <p>Get discovered locally online — no tech skills required.</p>
-      </div>
-
-      <div class="bg-white/90 backdrop-blur p-6 rounded-xl shadow-lg border">
-        <h3 class="text-xl font-semibold mb-2">📧 Task Management</h3>
-        <p>Email, text or voice note your tasks and we’ll get them sorted quickly.</p>
-      </div>
-
-      <div class="bg-white/90 backdrop-blur p-6 rounded-xl shadow-lg border">
-        <h3 class="text-xl font-semibold mb-2">🔧 Ongoing Support</h3>
-        <p>Reliable, practical help whenever you need it — pay as you go, no contracts.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- HOW IT WORKS -->
-  <section class="py-16" id="how">
-    <div class="max-w-5xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center mb-12">
-        Simple, Straightforward, Done
-      </h2>
-
-      <div class="grid md:grid-cols-3 gap-8 text-center">
-        <div class="bg-white/90 backdrop-blur p-6 rounded-xl shadow-lg border">
-          <h3 class="text-xl font-semibold mb-2">✉️ Send the Details</h3>
-          <p>Email, text or voice note your task, quotes or invoices for completion.</p>
-        </div>
-
-        <div class="bg-white/90 backdrop-blur p-6 rounded-xl shadow-lg border">
-          <h3 class="text-xl font-semibold mb-2">⚡ We Handle the Work</h3>
-          <p>Fast, accurate, and professional.</p>
-        </div>
-
-       <div class="bg-white/90 backdrop-blur p-6 rounded-xl shadow-lg border text-center">
-  <h3 class="text-xl font-semibold mb-2">
-    <span class="text-green-600">✔</span> Completed
-  </h3>
-  <p>Job done.</p>
-</div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT (kept clean: Who We Are only) -->
-  <section class="max-w-5xl mx-auto py-16 px-6 text-center" id="about">
-    <h2 class="text-3xl font-bold mb-10">About Your Tradie Support</h2>
-
-    <div class="bg-white/90 backdrop-blur p-8 rounded-xl shadow-lg border text-left space-y-4">
-      <h3 class="text-xl font-semibold mb-2">Who We Are</h3>
-
-      <p>
-        Your Tradie Support is run by a local Taranaki husband and wife with experience in logistics, accounts, and admin.
-        We know paperwork is an essential part of any job, but it can be time-consuming, frustrating, and tedious.
-      </p>
-
-      <p>
-        We’re here to make admin tasks easier by handling invoices, quotes, marketing, and general office work — saving tradies time and hassle.
-      </p>
-    </div>
-  </section>
-
-  <!-- STORY (THIS IS THE FIX — standalone section so it can't "go missing") -->
-  <section class="max-w-5xl mx-auto pb-16 px-6 text-center" id="story">
-    <div class="bg-white/90 backdrop-blur p-8 rounded-xl shadow-lg border text-left space-y-4">
-      <h2 class="text-3xl font-bold text-center mb-2">Our Story</h2>
-
-      <p>
-        After moving from Auckland to Taranaki in 2021, we now call Stratford home.
-      </p>
-
-      <p>
-        Having bought our first home in 2023, we’ve experienced the ups and downs of homeownership firsthand.
-        Seeing different tradies coming and going gave us real insight into how much effort it takes to run a trade business while keeping customers happy — especially in today’s financial climate.
-      </p>
-
-      <p>
-        With the birth of our daughter in 2024, we also understand how precious family time is.
-        That’s why helping tradies with tedious, time-consuming admin can make a real difference — so after a long day on the tools, they can enjoy quality time with their loved ones.
-      </p>
-    </div>
-  </section>
-
-  <!-- CONTACT (/#contact will ALWAYS land here because id="contact") -->
-  <section id="contact" class="bg-blue-600 text-white py-16">
-    <div class="max-w-xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold mb-6">Get Started Today</h2>
-
-      <form id="taskForm" action="https://formspree.io/f/xykeqbag" method="POST" class="space-y-4">
-        <input type="text" name="name" placeholder="Name" class="w-full p-3 rounded text-black" required />
-        <input type="email" name="email" placeholder="Email" class="w-full p-3 rounded text-black" required />
-        <input type="text" name="businessType" placeholder="Business Type" class="w-full p-3 rounded text-black" />
-        <textarea name="taskDescription" placeholder="Task Description" class="w-full p-3 rounded text-black" required></textarea>
-
-        <button type="submit" class="bg-white text-blue-600 px-6 py-3 rounded font-semibold hover:bg-gray-200">
-          Send Task
-        </button>
-      </form>
-
-      <div id="formMessage" class="mt-4 text-lg font-semibold"></div>
-
-      <p class="mt-8 text-xl font-bold">
-        Email: <a href="mailto:yourtradiesupp@gmail.com" class="underline">yourtradiesupp@gmail.com</a><br />
-        Phone: <a href="tel:02108690193" class="underline">021 086 90193</a>
-      </p>
-    </div>
-  </section>
-
-  <footer class="bg-gray-800 text-white text-center py-6">
-    Admin support built for tradies — simple, fast, reliable.
-  </footer>
-
-  <!-- Simple message after submit (optional but you had the div there) -->
-  <script>
-    const form = document.getElementById("taskForm");
-    const msg = document.getElementById("formMessage");
-
-    if (form && msg) {
-      form.addEventListener("submit", function () {
-        msg.textContent = "Sending…";
-      });
-    }
-  </script>
+<footer class="bg-gray-800 text-white text-center py-6">
+  Your Tradie Support — Quotes, invoices and admin done for busy tradies.
+</footer>
 
 </body>
 </html>
