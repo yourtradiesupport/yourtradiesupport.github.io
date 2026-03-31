@@ -2,330 +2,152 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Tradie Support | Find a Tradie or Get More Work NZ-Wide</title>
-  <meta name="description" content="Need a tradie? Post your job in 60 seconds and we’ll help connect you with the right tradie. Fast, simple, NZ-wide." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Tradie Support | Find a Tradie NZ-Wide</title>
+  <meta name="description" content="Post a job in 60 seconds and we’ll connect you with the right tradie. Residential, commercial and specialist work NZ-wide."/>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Inter', sans-serif; }
-    html { scroll-behavior: smooth; }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>body{font-family:'Inter',sans-serif}</style>
 </head>
+
 <body class="bg-slate-50 text-slate-900">
 
-  <!-- Header -->
-  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between py-4">
-        <a href="#top" class="flex items-center gap-3">
-          <img src="logo.png" alt="Your Tradie Support logo" class="h-11 w-auto" />
-          <div>
-            <p class="font-extrabold tracking-tight text-slate-900">Your Tradie Support</p>
-            <p class="text-xs text-slate-500">Find a tradie. Get more work. NZ-wide.</p>
-          </div>
-        </a>
+<!-- HEADER -->
+<header class="bg-white border-b sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+    <div class="flex items-center gap-3">
+      <img src="logo.png" class="h-10">
+      <span class="font-bold text-lg">Your Tradie Support</span>
+    </div>
+    <a href="GOOGLE_FORM_LINK" class="bg-slate-900 text-white px-5 py-2 rounded-lg font-semibold">
+      Post a Job
+    </a>
+  </div>
+</header>
 
-        <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-700">
-          <a href="#how-it-works" class="hover:text-slate-900">How it works</a>
-          <a href="#trades" class="hover:text-slate-900">Trades</a>
-          <a href="#areas" class="hover:text-slate-900">Areas</a>
-          <a href="#story" class="hover:text-slate-900">Who we are</a>
-          <a href="#tradies" class="hover:text-slate-900">For tradies</a>
-        </nav>
+<!-- HERO -->
+<section class="text-center py-20 px-4">
+  <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
+    Need a tradie?<br>We’ll help get your job sorted.
+  </h1>
+  <p class="mt-6 text-lg text-slate-600 max-w-xl mx-auto">
+    Post your job in 60 seconds and we’ll connect you with the right tradie — residential, commercial, or specialist work — without the hassle.
+  </p>
 
-        <a href="GOOGLE_FORM_LINK" class="inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2.5 text-sm font-semibold text-white hover:bg-slate-800 transition">
-          Post a Job
-        </a>
+  <div class="mt-8 flex justify-center gap-4 flex-wrap">
+    <a href="GOOGLE_FORM_LINK" class="bg-slate-900 text-white px-6 py-4 rounded-xl font-semibold text-lg">
+      Post a Job
+    </a>
+    <a href="#tradies" class="border px-6 py-4 rounded-xl font-semibold">
+      I’m a Tradie
+    </a>
+  </div>
+
+  <p class="mt-4 text-sm text-slate-500">⚡ Takes 60 seconds</p>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="bg-white py-16">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold">How it works</h2>
+    <div class="mt-10 grid md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="font-bold text-lg">1. Post your job</h3>
+        <p class="text-slate-600 mt-2">Tell us what you need done and where.</p>
+      </div>
+      <div>
+        <h3 class="font-bold text-lg">2. We review it</h3>
+        <p class="text-slate-600 mt-2">We match your job properly.</p>
+      </div>
+      <div>
+        <h3 class="font-bold text-lg">3. Get it sorted</h3>
+        <p class="text-slate-600 mt-2">We help connect you with the right tradie.</p>
       </div>
     </div>
-  </header>
+  </div>
+</section>
 
-  <!-- Hero -->
-  <section id="top" class="relative overflow-hidden bg-white">
-    <div class="absolute inset-0 bg-gradient-to-br from-slate-100 via-white to-emerald-50"></div>
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24">
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
-        <div>
-          <span class="inline-flex items-center rounded-full bg-emerald-100 px-3 py-1 text-sm font-semibold text-emerald-800 mb-5">NZ-wide tradie connections</span>
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-950 leading-tight">
-            Need a tradie?<br class="hidden sm:block"> We’ll help get your job sorted.
-          </h1>
-          <p class="mt-6 text-lg sm:text-xl text-slate-600 max-w-2xl leading-relaxed">
-            Post your job in 60 seconds and we’ll help connect you with the right tradie — without the hassle of chasing multiple people yourself.
-          </p>
+<!-- TRADES -->
+<section class="py-16 bg-slate-50">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center">Trades & Services</h2>
 
-          <div class="mt-8 flex flex-col sm:flex-row gap-4">
-            <a href="GOOGLE_FORM_LINK" class="inline-flex items-center justify-center rounded-2xl bg-slate-900 px-6 py-4 text-base font-semibold text-white hover:bg-slate-800 transition shadow-sm">
-              Post a Job in 60 Seconds
-            </a>
-            <a href="#tradies" class="inline-flex items-center justify-center rounded-2xl border border-slate-300 bg-white px-6 py-4 text-base font-semibold text-slate-900 hover:bg-slate-100 transition">
-              I’m a Tradie
-            </a>
-          </div>
+    <div class="mt-10 grid md:grid-cols-3 gap-6">
 
-          <div class="mt-8 grid sm:grid-cols-3 gap-4 text-sm">
-            <div class="rounded-2xl bg-slate-100 p-4">
-              <p class="font-bold text-slate-900">Fast & simple</p>
-              <p class="mt-1 text-slate-600">Submit your job quickly without long, confusing steps.</p>
-            </div>
-            <div class="rounded-2xl bg-slate-100 p-4">
-              <p class="font-bold text-slate-900">NZ-wide reach</p>
-              <p class="mt-1 text-slate-600">Built to grow across regions and trades.</p>
-            </div>
-            <div class="rounded-2xl bg-slate-100 p-4">
-              <p class="font-bold text-slate-900">Less hassle</p>
-              <p class="mt-1 text-slate-600">A simpler way to get your job moving.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="lg:pl-8">
-          <div class="rounded-3xl bg-slate-900 p-6 sm:p-8 text-white shadow-2xl">
-            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-300">Why people use us</p>
-            <h2 class="mt-4 text-2xl sm:text-3xl font-bold leading-tight">A better way to get jobs moving</h2>
-            <div class="mt-6 space-y-4 text-slate-200">
-              <div class="rounded-2xl bg-white/10 p-4">
-                <p class="font-semibold text-white">For homeowners</p>
-                <p class="mt-1 text-sm">Tell us what you need done, where it is, and any helpful details or photos.</p>
-              </div>
-              <div class="rounded-2xl bg-white/10 p-4">
-                <p class="font-semibold text-white">For tradies</p>
-                <p class="mt-1 text-sm">Get opportunities sent through without wasting time chasing every lead yourself.</p>
-              </div>
-              <div class="rounded-2xl bg-white/10 p-4">
-                <p class="font-semibold text-white">Simple process</p>
-                <p class="mt-1 text-sm">No chasing multiple people — just a cleaner path to getting the job sorted.</p>
-              </div>
-            </div>
-            <a href="GOOGLE_FORM_LINK" class="mt-6 inline-flex items-center justify-center rounded-2xl bg-emerald-400 px-5 py-3 font-semibold text-slate-950 hover:bg-emerald-300 transition">
-              Get Started
-            </a>
-          </div>
-        </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-bold">Roofing</h3>
+        <p class="text-sm mt-2 text-slate-600">Repairs, replacements, leaks and re-roofs.</p>
       </div>
-    </div>
-  </section>
 
-  <!-- Split paths -->
-  <section class="py-14 sm:py-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="rounded-3xl bg-white border border-slate-200 p-8 shadow-sm">
-          <p class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">For customers</p>
-          <h3 class="mt-3 text-2xl font-bold text-slate-950">Need work done?</h3>
-          <p class="mt-3 text-slate-600 leading-relaxed">
-            Post your job, share the address and details, and we’ll help connect it with the right tradie where possible.
-          </p>
-          <ul class="mt-6 space-y-3 text-slate-700">
-            <li>• Quick job submission</li>
-            <li>• Roofing, building, concrete, painting and more</li>
-            <li>• Suitable for small jobs through to larger work</li>
-          </ul>
-          <a href="GOOGLE_FORM_LINK" class="mt-7 inline-flex items-center justify-center rounded-2xl bg-slate-900 px-5 py-3 font-semibold text-white hover:bg-slate-800 transition">Post a Job</a>
-        </div>
-
-        <div id="tradies" class="rounded-3xl bg-emerald-50 border border-emerald-200 p-8 shadow-sm">
-          <p class="text-sm font-semibold uppercase tracking-[0.18em] text-emerald-800">For tradies</p>
-          <h3 class="mt-3 text-2xl font-bold text-slate-950">Want more work without chasing everything yourself?</h3>
-          <p class="mt-3 text-slate-700 leading-relaxed">
-            Tell us what trade you do, where you want to work, and the type of jobs you’re after. We can also support quoting, admin and backend organisation.
-          </p>
-          <ul class="mt-6 space-y-3 text-slate-800">
-            <li>• Opportunities in areas you actually want to work</li>
-            <li>• Less wasted time on back-and-forth</li>
-            <li>• Optional backend support as things grow</li>
-          </ul>
-          <a href="mailto:yourtradiesupp@gmail.com?subject=Tradie%20Enquiry%20-%20Your%20Tradie%20Support" class="mt-7 inline-flex items-center justify-center rounded-2xl bg-emerald-500 px-5 py-3 font-semibold text-slate-950 hover:bg-emerald-400 transition">Register Interest</a>
-        </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-bold">Building</h3>
+        <p class="text-sm mt-2 text-slate-600">General building, renovations and maintenance.</p>
       </div>
-    </div>
-  </section>
 
-  <!-- How it works -->
-  <section id="how-it-works" class="py-16 sm:py-20 bg-white border-y border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl">
-        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">How it works</p>
-        <h2 class="mt-3 text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-950">Simple on purpose</h2>
-        <p class="mt-4 text-lg text-slate-600">
-          The easier it is to submit a job or register as a tradie, the more likely people are to use the site. That’s the whole point.
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-bold">Concrete</h3>
+        <p class="text-sm mt-2 text-slate-600">Driveways, slabs and prep work.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-bold">Painting</h3>
+        <p class="text-sm mt-2 text-slate-600">Interior and exterior painting.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-bold">Fencing & Landscaping</h3>
+        <p class="text-sm mt-2 text-slate-600">Outdoor work, fencing and section improvements.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-bold">Property Maintenance</h3>
+        <p class="text-sm mt-2 text-slate-600">
+          Residential and commercial property maintenance including repairs, upkeep and ongoing work.
         </p>
       </div>
 
-      <div class="mt-10 grid lg:grid-cols-2 gap-8">
-        <div class="rounded-3xl bg-slate-50 p-8 border border-slate-200">
-          <h3 class="text-2xl font-bold text-slate-950">Customers</h3>
-          <div class="mt-6 space-y-5">
-            <div class="flex gap-4">
-              <div class="h-10 w-10 shrink-0 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold">1</div>
-              <div>
-                <p class="font-semibold text-slate-900">Post your job</p>
-                <p class="text-slate-600">Share what needs doing, where it is, and any helpful details.</p>
-              </div>
-            </div>
-            <div class="flex gap-4">
-              <div class="h-10 w-10 shrink-0 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold">2</div>
-              <div>
-                <p class="font-semibold text-slate-900">We review it</p>
-                <p class="text-slate-600">We look at the job and work out the best direction for it.</p>
-              </div>
-            </div>
-            <div class="flex gap-4">
-              <div class="h-10 w-10 shrink-0 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold">3</div>
-              <div>
-                <p class="font-semibold text-slate-900">Get connected</p>
-                <p class="text-slate-600">We help move the job toward the right tradie or business.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="rounded-3xl bg-slate-900 p-8 text-white border border-slate-900">
-          <h3 class="text-2xl font-bold">Tradies</h3>
-          <div class="mt-6 space-y-5">
-            <div class="flex gap-4">
-              <div class="h-10 w-10 shrink-0 rounded-full bg-emerald-400 text-slate-950 flex items-center justify-center font-bold">1</div>
-              <div>
-                <p class="font-semibold text-white">Tell us what you do</p>
-                <p class="text-slate-300">Your trade, your regions, and the type of work you want more of.</p>
-              </div>
-            </div>
-            <div class="flex gap-4">
-              <div class="h-10 w-10 shrink-0 rounded-full bg-emerald-400 text-slate-950 flex items-center justify-center font-bold">2</div>
-              <div>
-                <p class="font-semibold text-white">Receive suitable opportunities</p>
-                <p class="text-slate-300">We focus on practical fit rather than wasting time with broad scattershot leads.</p>
-              </div>
-            </div>
-            <div class="flex gap-4">
-              <div class="h-10 w-10 shrink-0 rounded-full bg-emerald-400 text-slate-950 flex items-center justify-center font-bold">3</div>
-              <div>
-                <p class="font-semibold text-white">Keep things moving</p>
-                <p class="text-slate-300">Backend help with quoting, invoicing, admin and organisation can sit behind the work as needed.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="bg-white p-6 rounded-xl shadow md:col-span-3">
+        <h3 class="font-bold">Commercial & Specialist Work</h3>
+        <p class="text-sm mt-2 text-slate-600">
+          Coolstores, chillers, freezers, insulated panel work (fire-rated or poly), doors, maintenance and repairs. Suitable for supermarkets, industrial sites, hygiene rooms, portacoms and more.
+        </p>
       </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Trades -->
-  <section id="trades" class="py-16 sm:py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl">
-        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">Trades we support</p>
-        <h2 class="mt-3 text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-950">Built for the trades that keep things moving</h2>
-      </div>
+<!-- TRADIES -->
+<section id="tradies" class="bg-emerald-50 py-16 text-center">
+  <h2 class="text-3xl font-bold">Want more work?</h2>
+  <p class="mt-4 text-slate-600 max-w-xl mx-auto">
+    We connect tradies with jobs and help keep things moving behind the scenes.
+  </p>
+  <a href="mailto:yourtradiesupp@gmail.com" class="mt-6 inline-block bg-emerald-400 px-6 py-4 rounded-xl font-semibold">
+    Register Interest
+  </a>
+</section>
 
-      <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        <div class="rounded-2xl bg-white p-6 border border-slate-200 shadow-sm"><p class="text-lg font-bold">Roofing</p><p class="mt-2 text-slate-600">Repairs, replacements, leaks, re-roofs and more.</p></div>
-        <div class="rounded-2xl bg-white p-6 border border-slate-200 shadow-sm"><p class="text-lg font-bold">Building</p><p class="mt-2 text-slate-600">General building, maintenance, renovations and site work.</p></div>
-        <div class="rounded-2xl bg-white p-6 border border-slate-200 shadow-sm"><p class="text-lg font-bold">Concrete</p><p class="mt-2 text-slate-600">Driveways, slabs, prep work and related projects.</p></div>
-        <div class="rounded-2xl bg-white p-6 border border-slate-200 shadow-sm"><p class="text-lg font-bold">Painting</p><p class="mt-2 text-slate-600">Interior, exterior, maintenance and tidy-up work.</p></div>
-        <div class="rounded-2xl bg-white p-6 border border-slate-200 shadow-sm"><p class="text-lg font-bold">Fencing & Landscaping</p><p class="mt-2 text-slate-600">Outdoor jobs, fencing, section work and property improvements.</p></div>
-        <div class="rounded-2xl bg-white p-6 border border-slate-200 shadow-sm"><p class="text-lg font-bold">Drainage & More</p><p class="mt-2 text-slate-600">Drainage plus other practical trade support as the network grows.</p></div>
-      </div>
-    </div>
-  </section>
+<!-- STORY -->
+<section class="bg-white py-16">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="text-3xl font-bold">Who we are</h2>
+    <p class="mt-4 text-slate-600">
+      Your Tradie Support was built to make it easier to find tradies and keep jobs moving properly.
+    </p>
+    <p class="mt-4 text-slate-600">
+      From small residential jobs through to large commercial and specialist work, we help connect the right people and keep things organised behind the scenes.
+    </p>
+  </div>
+</section>
 
-  <!-- Areas -->
-  <section id="areas" class="py-16 sm:py-20 bg-white border-y border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid lg:grid-cols-2 gap-10 items-center">
-        <div>
-          <p class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">Service areas</p>
-          <h2 class="mt-3 text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-950">Starting strong and built to grow NZ-wide</h2>
-          <p class="mt-4 text-lg text-slate-600">Your Tradie Support is already working across multiple regions and is set up to expand further as the network grows.</p>
-        </div>
-        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
-          <div class="rounded-2xl bg-slate-100 p-5 font-semibold text-slate-900">Northland</div>
-          <div class="rounded-2xl bg-slate-100 p-5 font-semibold text-slate-900">Wellington</div>
-          <div class="rounded-2xl bg-slate-100 p-5 font-semibold text-slate-900">Hawke’s Bay</div>
-          <div class="rounded-2xl bg-slate-100 p-5 font-semibold text-slate-900">Manawatū</div>
-          <div class="rounded-2xl bg-slate-100 p-5 font-semibold text-slate-900">Whanganui</div>
-          <div class="rounded-2xl bg-slate-100 p-5 font-semibold text-slate-900">Southland</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Story -->
-  <section id="story" class="py-16 sm:py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid lg:grid-cols-2 gap-10 items-start">
-        <div>
-          <p class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">Who we are</p>
-          <h2 class="mt-3 text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-950">Built from real trade support experience</h2>
-        </div>
-        <div class="space-y-5 text-lg text-slate-600 leading-relaxed">
-          <p>
-            Your Tradie Support was built around a problem tradies know well — the paperwork, quoting, supplier follow-up and admin that piles up after a full day on the tools.
-          </p>
-          <p>
-            We’ve worked alongside tradies helping with quoting, invoicing, supplier coordination, organisation and job setup, which means we understand the backend side of jobs properly.
-          </p>
-          <p>
-            That’s what makes this different. It’s not just a website collecting enquiries. It’s a practical support platform designed to help customers find the right help and help tradies keep work moving.
-          </p>
-          <p>
-            As the network grows, the goal stays the same: make it easier to find tradies, easier to create opportunities, and easier to keep jobs organised behind the scenes.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Why choose us -->
-  <section class="py-16 sm:py-20 bg-slate-900 text-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl">
-        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-emerald-300">Why use Your Tradie Support</p>
-        <h2 class="mt-3 text-3xl sm:text-4xl font-extrabold tracking-tight">More than just leads</h2>
-      </div>
-      <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-4 gap-5">
-        <div class="rounded-2xl bg-white/10 p-6"><p class="font-bold">Simple process</p><p class="mt-2 text-slate-300">Easy for customers to submit and easy for tradies to engage with.</p></div>
-        <div class="rounded-2xl bg-white/10 p-6"><p class="font-bold">Real trade understanding</p><p class="mt-2 text-slate-300">Built around how jobs actually get priced, organised and delivered.</p></div>
-        <div class="rounded-2xl bg-white/10 p-6"><p class="font-bold">Practical support</p><p class="mt-2 text-slate-300">Not just an enquiry form — a more hands-on way to help get work moving.</p></div>
-        <div class="rounded-2xl bg-white/10 p-6"><p class="font-bold">NZ growth potential</p><p class="mt-2 text-slate-300">Set up to expand by trade, region and service over time.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="py-16 sm:py-20 bg-emerald-400">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-950">Ready to get things moving?</h2>
-      <p class="mt-4 text-lg text-slate-800 max-w-2xl mx-auto">Whether you need a tradie or want more work coming in, Your Tradie Support is built to make the next step simple.</p>
-      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="GOOGLE_FORM_LINK" class="inline-flex items-center justify-center rounded-2xl bg-slate-950 px-6 py-4 text-base font-semibold text-white hover:bg-slate-800 transition">Post a Job</a>
-        <a href="mailto:yourtradiesupp@gmail.com?subject=Tradie%20Enquiry%20-%20Your%20Tradie%20Support" class="inline-flex items-center justify-center rounded-2xl border border-slate-900 px-6 py-4 text-base font-semibold text-slate-950 hover:bg-emerald-300 transition">Tradie Enquiry</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-white border-t border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-      <div class="flex flex-col md:flex-row gap-6 md:items-center md:justify-between">
-        <div class="flex items-center gap-3">
-          <img src="logo.png" alt="Your Tradie Support logo" class="h-10 w-auto" />
-          <div>
-            <p class="font-bold text-slate-950">Your Tradie Support</p>
-            <p class="text-sm text-slate-500">Find a tradie. Get more work. NZ-wide.</p>
-          </div>
-        </div>
-
-        <div class="text-sm text-slate-600">
-          <p>Email: <a class="font-medium text-slate-900 hover:underline" href="mailto:yourtradiesupp@gmail.com">yourtradiesupp@gmail.com</a></p>
-          <p class="mt-1">Built to connect jobs, tradies, and practical support.</p>
-        </div>
-      </div>
-    </div>
-  </footer>
+<!-- FINAL CTA -->
+<section class="py-20 text-center bg-emerald-400">
+  <h2 class="text-3xl font-extrabold">Ready to get your job sorted?</h2>
+  <a href="GOOGLE_FORM_LINK" class="mt-6 inline-block bg-slate-900 text-white px-6 py-4 rounded-xl font-semibold">
+    Post a Job
+  </a>
+</section>
 
 </body>
 </html>
