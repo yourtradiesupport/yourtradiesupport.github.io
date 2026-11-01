@@ -2,500 +2,387 @@
 <!DOCTYPE html>
 <html lang="en-NZ">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Tradie Support | Admin Support for NZ Tradies</title>
-  <meta name="description" content="Practical admin support for busy New Zealand tradies. Help with quoting, invoicing, supplier communication, job coordination and general business admin.">
-  <meta name="theme-color" content="#12352f">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Tradie Support | Admin Support for NZ Tradies</title>
+<meta name="description" content="Flexible admin support for busy New Zealand tradies. Quotes, invoicing, supplier coordination and job administration.">
+<meta name="theme-color" content="#25483b">
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <style>
-    html { scroll-behavior: smooth; }
-    body { font-family: 'DM Sans', sans-serif; }
-    h1, h2, h3 { font-family: 'Manrope', sans-serif; }
-    section[id], article[id] { scroll-margin-top: 125px; }
-
-    .hero-grid {
-      background-image:
-        radial-gradient(circle at 85% 18%, rgba(100,190,157,.18), transparent 28%),
-        radial-gradient(circle at 8% 90%, rgba(100,190,157,.10), transparent 26%);
-    }
-
-    .eyebrow { letter-spacing: .16em; }
-  </style>
+<style>
+html { scroll-behavior:smooth; }
+body { font-family:'DM Sans',sans-serif; }
+h1,h2,h3 { font-family:'Manrope',sans-serif; }
+section[id],article[id] { scroll-margin-top:125px; }
+.eyebrow { letter-spacing:.15em; }
+</style>
 </head>
 
-<body class="bg-[#f7f8f6] text-slate-900 antialiased">
+<body class="bg-[#f4f0e7] text-[#26372f]">
 
 <!-- HEADER -->
-<header class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/95 backdrop-blur">
-  <div class="mx-auto max-w-7xl px-3 py-3 sm:px-8 sm:py-4">
+<header class="sticky top-0 z-50 border-b border-[#d9d2c3] bg-[#fbf8f1]/95 backdrop-blur">
+<div class="mx-auto max-w-7xl px-3 py-3 sm:px-8">
 
-    <!-- LOGO AND BUSINESS NAME -->
-    <a href="#top" class="flex items-center gap-3">
-      <img
-        src="logo.png"
-        alt="Your Tradie Support logo"
-        class="h-11 w-auto"
-        onerror="this.style.display='none'"
-      >
+<a href="#top" class="flex items-center gap-3">
+<img src="logo.png" alt="Your Tradie Support logo" class="h-12 w-auto">
+<div>
+<p class="font-extrabold text-[#25483b]">Your Tradie Support</p>
+<p class="text-xs text-[#6e776d]">Admin support for busy tradies</p>
+</div>
+</a>
 
-      <div class="min-w-0">
-        <p class="text-base font-extrabold tracking-tight text-[#12352f] sm:text-lg">
-          Your Tradie Support
-        </p>
-        <p class="text-xs text-slate-500">
-          Admin support for busy tradies
-        </p>
-      </div>
-    </a>
+<nav class="mt-4 grid grid-cols-4 gap-1 border-t border-[#ded8cc] pt-3 text-center text-[10px] font-bold sm:text-sm">
 
-    <!-- FOUR NAVIGATION LINKS: MOBILE AND DESKTOP -->
-    <nav class="mt-4 grid grid-cols-4 gap-1 border-t border-slate-200 pt-3 text-center text-[10px] font-bold sm:gap-3 sm:text-sm">
+<a href="#tradies" class="flex min-h-11 items-center justify-center rounded-lg text-[#25483b] hover:bg-[#e9e4d8]">Tradies</a>
 
-      <a href="#tradies"
-         class="flex min-h-11 items-center justify-center rounded-lg px-1 text-[#12352f] transition hover:bg-emerald-50">
-        Tradies
-      </a>
+<a href="#homeowners" class="flex min-h-11 items-center justify-center rounded-lg text-[#25483b] hover:bg-[#e9e4d8]">Homeowners</a>
 
-      <a href="#homeowners"
-         class="flex min-h-11 items-center justify-center rounded-lg px-1 text-[#12352f] transition hover:bg-emerald-50">
-        Homeowners
-      </a>
+<a href="#contact" class="flex min-h-11 items-center justify-center rounded-lg text-[#25483b] hover:bg-[#e9e4d8]">Contact Us</a>
 
-      <a href="#contact"
-         class="flex min-h-11 items-center justify-center rounded-lg px-1 text-[#12352f] transition hover:bg-emerald-50">
-        Contact Us
-      </a>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSehazhbs_7XpZMGlk9RwILmE7rbBevwZuWzKUUI3cvAx1msfQ/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="flex min-h-11 items-center justify-center rounded-lg bg-[#25483b] px-1 text-white hover:bg-[#35614f]">Log a Job</a>
 
-      <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLSehazhbs_7XpZMGlk9RwILmE7rbBevwZuWzKUUI3cvAx1msfQ/viewform?usp=dialog"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="flex min-h-11 items-center justify-center rounded-lg bg-[#12352f] px-1 text-white transition hover:bg-[#1b4b40]"
-      >
-        Log a Job
-      </a>
-
-    </nav>
-  </div>
+</nav>
+</div>
 </header>
 
 <main>
 
 <!-- HERO -->
-<section id="top" class="hero-grid bg-white">
-  <div class="mx-auto grid max-w-7xl items-center gap-12 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-[1.1fr_.9fr] lg:py-24">
+<section id="top" class="bg-[#e8e2d5]">
+<div class="mx-auto grid max-w-7xl items-center gap-10 px-5 py-14 sm:px-8 sm:py-20 lg:grid-cols-2">
 
-    <div>
-      <span class="mb-6 inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-bold text-[#17664f]">
-        Your extra pair of hands behind the scenes
-      </span>
+<div>
+<p class="eyebrow text-xs font-extrabold uppercase text-[#58745e]">Your extra pair of hands behind the scenes</p>
 
-      <h1 class="max-w-3xl text-4xl font-extrabold leading-tight tracking-tight text-[#102a26] sm:text-5xl lg:text-6xl">
-        More time on the tools.<br>
-        <span class="text-[#218365]">Less time on admin.</span>
-      </h1>
+<h1 class="mt-5 text-4xl font-extrabold leading-tight text-[#25483b] sm:text-5xl lg:text-6xl">
+More time on the tools.<br>
+<span class="text-[#b16e43]">Less time on admin.</span>
+</h1>
 
-      <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-600 sm:text-xl">
-        Practical, remote admin support for busy tradies across New Zealand. Keep your quotes, invoices, customers and jobs organised — without hiring staff.
-      </p>
+<p class="mt-6 text-lg leading-8 text-[#59645b]">
+Practical, remote admin support for busy tradies across New Zealand. I help keep the paperwork, customers and jobs organised — so you can focus on running your business.
+</p>
 
-      <div class="mt-8 flex flex-col gap-3 sm:flex-row">
-        <a
-          href="mailto:yourtradiesupp@gmail.com?subject=Admin%20Support%20Enquiry"
-          class="rounded-xl bg-[#12352f] px-6 py-4 text-center font-bold text-white transition hover:bg-[#1b4b40]"
-        >
-          Get Admin Support →
-        </a>
+<div class="mt-8 flex flex-col gap-3 sm:flex-row">
+<a href="mailto:yourtradiesupp@gmail.com?subject=Admin%20Support%20Enquiry" class="rounded-xl bg-[#25483b] px-6 py-4 text-center font-bold text-white hover:bg-[#35614f]">Ask About Admin Support →</a>
+<a href="#tradies" class="rounded-xl border border-[#a9aa99] bg-[#f8f5ed] px-6 py-4 text-center font-bold text-[#25483b] hover:bg-white">How I Can Help</a>
+</div>
 
-        <a
-          href="#services"
-          class="rounded-xl border border-slate-300 bg-white px-6 py-4 text-center font-bold text-slate-800 transition hover:bg-slate-50"
-        >
-          Explore Services
-        </a>
-      </div>
+<div class="mt-7 flex flex-wrap gap-4 text-sm font-semibold text-[#59645b]">
+<span>✓ Flexible support</span>
+<span>✓ Pay for work completed</span>
+<span>✓ No long-term contracts</span>
+</div>
+</div>
 
-      <div class="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-sm font-semibold text-slate-600">
-        <span>✓ Flexible support</span>
-        <span>✓ Pay for work completed</span>
-        <span>✓ No long-term contracts</span>
-      </div>
-    </div>
+<div class="rounded-3xl bg-[#25483b] p-7 text-[#fbf8f1] shadow-xl sm:p-9">
+<p class="eyebrow text-xs font-bold uppercase text-[#d9b58c]">Behind every good trade business</p>
 
-    <div class="rounded-3xl bg-[#12352f] p-6 text-white shadow-2xl sm:p-8">
-      <p class="eyebrow text-xs font-bold uppercase text-emerald-300">The day-to-day</p>
+<h2 class="mt-3 text-2xl font-extrabold sm:text-3xl">There's a lot more than the work on the tools.</h2>
 
-      <h2 class="mt-3 text-2xl font-extrabold sm:text-3xl">
-        Your admin, under control.
-      </h2>
+<p class="mt-4 leading-7 text-[#e3e6dc]">
+Quotes to send. Invoices to chase. Suppliers to call. Customers to update. I can help take those jobs off your hands.
+</p>
 
-      <p class="mt-3 leading-7 text-slate-300">
-        A helping hand with the jobs and paperwork that follow you home after a full day on the tools.
-      </p>
+<div class="mt-7 space-y-3">
+<div class="rounded-2xl bg-white/10 p-4">
+<p class="font-bold">Quotes & invoicing</p>
+<p class="mt-1 text-sm text-[#e3e6dc]">Get paperwork prepared, sent and followed up.</p>
+</div>
+<div class="rounded-2xl bg-white/10 p-4">
+<p class="font-bold">Suppliers & customers</p>
+<p class="mt-1 text-sm text-[#e3e6dc]">Keep communication and orders moving.</p>
+</div>
+<div class="rounded-2xl bg-white/10 p-4">
+<p class="font-bold">Job organisation</p>
+<p class="mt-1 text-sm text-[#e3e6dc]">Stay on top of scheduling, paperwork and job details.</p>
+</div>
+</div>
+</div>
 
-      <div class="mt-7 space-y-3">
-        <div class="rounded-2xl border border-white/10 bg-white/[0.07] p-4">
-          <p class="font-bold">01 · Quotes & Invoicing</p>
-          <p class="mt-1 text-sm text-slate-300">
-            Prepare paperwork and follow up on quotes and invoices.
-          </p>
-        </div>
-
-        <div class="rounded-2xl border border-white/10 bg-white/[0.07] p-4">
-          <p class="font-bold">02 · Customers & Suppliers</p>
-          <p class="mt-1 text-sm text-slate-300">
-            Keep communication, orders and follow-ups moving.
-          </p>
-        </div>
-
-        <div class="rounded-2xl border border-white/10 bg-white/[0.07] p-4">
-          <p class="font-bold">03 · Job Organisation</p>
-          <p class="mt-1 text-sm text-slate-300">
-            Help keep schedules, job details and paperwork organised.
-          </p>
-        </div>
-      </div>
-
-      <p class="mt-6 border-t border-white/15 pt-5 text-sm text-slate-300">
-        Flexible support that fits around your business.
-      </p>
-    </div>
-
-  </div>
+</div>
 </section>
 
 <!-- TRADIES AND HOMEOWNERS -->
 <section class="py-14 sm:py-16">
-  <div class="mx-auto grid max-w-7xl gap-5 px-5 sm:px-8 md:grid-cols-2">
+<div class="mx-auto grid max-w-7xl gap-7 px-5 sm:px-8 lg:grid-cols-2">
 
-    <!-- TRADIES -->
-    <article id="tradies" class="rounded-3xl bg-[#12352f] p-7 text-white sm:p-8">
-      <p class="eyebrow text-xs font-extrabold uppercase text-emerald-300">
-        For Tradies
-      </p>
+<!-- TRADIES -->
+<article id="tradies" class="rounded-3xl bg-[#25483b] p-8 text-[#fbf8f1] shadow-sm sm:p-10">
 
-      <h2 class="mt-3 text-2xl font-extrabold sm:text-3xl">
-        Spend less time on admin.
-      </h2>
+<p class="eyebrow text-xs font-extrabold uppercase text-[#d9b58c]">For Tradies</p>
 
-      <p class="mt-3 leading-7 text-slate-300">
-        Get practical help with quotes, invoices, supplier communication, job coordination and the paperwork behind your business.
-      </p>
+<h2 class="mt-4 text-3xl font-extrabold sm:text-4xl">
+You look after the job. I'll help with the admin.
+</h2>
 
-      <ul class="mt-5 space-y-2 text-slate-200">
-        <li>✓ Quotes and invoicing</li>
-        <li>✓ Supplier and customer communication</li>
-        <li>✓ Job setup and coordination</li>
-        <li>✓ Xero and general admin support</li>
-      </ul>
+<p class="mt-5 text-lg leading-8 text-[#e3e6dc]">
+Whether you're a sole trader or running a growing team, I can take care of the office work that keeps getting pushed to the end of the day.
+</p>
 
-      <a href="#services"
-         class="mt-6 inline-block rounded-xl bg-emerald-300 px-5 py-3 font-bold text-[#12352f] transition hover:bg-emerald-200">
-        Explore Admin Support →
-      </a>
-    </article>
+<ul class="mt-6 space-y-3 text-[#f5f1e8]">
+<li>✓ Quotes, invoices and follow-ups</li>
+<li>✓ Supplier orders and communication</li>
+<li>✓ Job setup, scheduling and paperwork</li>
+<li>✓ Xero and general business admin</li>
+</ul>
 
-    <!-- HOMEOWNERS -->
-    <article id="homeowners" class="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm sm:p-8">
-      <p class="eyebrow text-xs font-extrabold uppercase text-[#218365]">
-        For Homeowners
-      </p>
+<a href="#services" class="mt-8 inline-flex rounded-xl bg-[#d9b58c] px-5 py-3.5 font-bold text-[#26372f] hover:bg-[#e8c9a4]">
+Explore Tradie Support →
+</a>
 
-      <h2 class="mt-3 text-2xl font-extrabold text-[#102a26] sm:text-3xl">
-        Need a job sorted?
-      </h2>
+</article>
 
-      <p class="mt-3 leading-7 text-slate-600">
-        Tell us what you need done, where the work is and any helpful details. We'll review your enquiry and help connect you with a suitable tradie where possible.
-      </p>
+<!-- HOMEOWNERS -->
+<article id="homeowners" class="rounded-3xl border-2 border-[#d2c7b4] bg-[#fbf8f1] p-8 shadow-sm sm:p-10">
 
-      <p class="mt-4 text-sm leading-6 text-slate-500">
-        From roofing and building to painting, fencing, landscaping and property maintenance.
-      </p>
+<p class="eyebrow text-xs font-extrabold uppercase text-[#a56740]">For Homeowners</p>
 
-      <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLSehazhbs_7XpZMGlk9RwILmE7rbBevwZuWzKUUI3cvAx1msfQ/viewform?usp=dialog"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="mt-6 inline-block rounded-xl bg-[#12352f] px-5 py-3 font-bold text-white transition hover:bg-[#1b4b40]"
-      >
-        Log a Job →
-      </a>
-    </article>
+<h2 class="mt-4 text-3xl font-extrabold text-[#25483b] sm:text-4xl">
+Need a hand finding the right tradie?
+</h2>
 
-  </div>
+<p class="mt-5 text-lg leading-8 text-[#59645b]">
+Tell me a little about the work you need done and where you're based. I'll review your enquiry and, where possible, help connect you with a suitable tradie.
+</p>
+
+<p class="mt-5 leading-7 text-[#59645b]">
+From roofing and building to painting, fencing, landscaping and property maintenance.
+</p>
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSehazhbs_7XpZMGlk9RwILmE7rbBevwZuWzKUUI3cvAx1msfQ/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="mt-8 inline-flex rounded-xl bg-[#a56740] px-5 py-3.5 font-bold text-white hover:bg-[#895333]">
+Log Your Job →
+</a>
+
+</article>
+</div>
 </section>
 
-<!-- ADMIN SERVICES -->
-<section id="services" class="py-16 sm:py-20">
-  <div class="mx-auto max-w-7xl px-5 sm:px-8">
+<!-- SERVICES -->
+<section id="services" class="bg-[#e8e2d5] py-16 sm:py-20">
+<div class="mx-auto max-w-7xl px-5 sm:px-8">
 
-    <div class="max-w-2xl">
-      <p class="eyebrow text-xs font-extrabold uppercase text-[#218365]">
-        What I Can Help With
-      </p>
+<p class="eyebrow text-xs font-extrabold uppercase text-[#a56740]">Admin Support</p>
 
-      <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-[#102a26] sm:text-4xl">
-        The admin side of your trade business, taken care of.
-      </h2>
+<h2 class="mt-3 text-3xl font-extrabold text-[#25483b] sm:text-4xl">
+What can I take off your plate?
+</h2>
 
-      <p class="mt-4 text-lg leading-8 text-slate-600">
-        From a few jobs that need catching up on to ongoing support, the goal is to free up your time and help your business run more smoothly.
-      </p>
-    </div>
+<p class="mt-4 max-w-2xl text-lg leading-8 text-[#59645b]">
+Flexible support built around the way your trade business works. Get help with one task or ongoing admin.
+</p>
 
-    <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+<div class="mt-9 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
 
-      <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-        <div class="text-2xl text-[#218365]">↗</div>
-        <h3 class="mt-4 text-xl font-extrabold">Quotes & Invoicing</h3>
-        <p class="mt-2 leading-7 text-slate-600">
-          Prepare and send quotes, create invoices and follow up on outstanding paperwork.
-        </p>
-      </article>
+<div class="rounded-2xl bg-[#fbf8f1] p-6">
+<h3 class="text-xl font-extrabold text-[#25483b]">Quotes & Invoicing</h3>
+<p class="mt-2 leading-7 text-[#59645b]">Preparing quotes, sending invoices and following up on outstanding paperwork.</p>
+</div>
 
-      <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-        <div class="text-2xl text-[#218365]">✉</div>
-        <h3 class="mt-4 text-xl font-extrabold">Customer & Supplier Contact</h3>
-        <p class="mt-2 leading-7 text-slate-600">
-          Manage emails, customer updates, supplier orders and follow-ups.
-        </p>
-      </article>
+<div class="rounded-2xl bg-[#fbf8f1] p-6">
+<h3 class="text-xl font-extrabold text-[#25483b]">Customers & Suppliers</h3>
+<p class="mt-2 leading-7 text-[#59645b]">Emails, customer updates, supplier orders and communication.</p>
+</div>
 
-      <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-        <div class="text-2xl text-[#218365]">▦</div>
-        <h3 class="mt-4 text-xl font-extrabold">Job Coordination</h3>
-        <p class="mt-2 leading-7 text-slate-600">
-          Assist with job setup, scheduling, paperwork and keeping the next steps clear.
-        </p>
-      </article>
+<div class="rounded-2xl bg-[#fbf8f1] p-6">
+<h3 class="text-xl font-extrabold text-[#25483b]">Job Coordination</h3>
+<p class="mt-2 leading-7 text-[#59645b]">Job setup, scheduling, paperwork and keeping tasks on track.</p>
+</div>
 
-      <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-        <div class="text-2xl text-[#218365]">◎</div>
-        <h3 class="mt-4 text-xl font-extrabold">General Business Admin</h3>
-        <p class="mt-2 leading-7 text-slate-600">
-          Keep records, documents, job details and everyday administration organised.
-        </p>
-      </article>
+<div class="rounded-2xl bg-[#fbf8f1] p-6">
+<h3 class="text-xl font-extrabold text-[#25483b]">Xero & Accounts Admin</h3>
+<p class="mt-2 leading-7 text-[#59645b]">Invoices, accounts receivable and day-to-day Xero administration.</p>
+</div>
 
-      <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-        <div class="text-2xl text-[#218365]">▤</div>
-        <h3 class="mt-4 text-xl font-extrabold">Accounts & Xero Admin</h3>
-        <p class="mt-2 leading-7 text-slate-600">
-          Help with accounts receivable, Xero administration and keeping records up to date.
-        </p>
-      </article>
+<div class="rounded-2xl bg-[#fbf8f1] p-6">
+<h3 class="text-xl font-extrabold text-[#25483b]">Documents & Paperwork</h3>
+<p class="mt-2 leading-7 text-[#59645b]">Job files, customer documents, forms and business records.</p>
+</div>
 
-      <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-        <div class="text-2xl text-[#218365]">＋</div>
-        <h3 class="mt-4 text-xl font-extrabold">Flexible Extra Support</h3>
-        <p class="mt-2 leading-7 text-slate-600">
-          Practical help with the tasks taking you away from billable work.
-        </p>
-      </article>
+<div class="rounded-2xl bg-[#fbf8f1] p-6">
+<h3 class="text-xl font-extrabold text-[#25483b]">General Admin</h3>
+<p class="mt-2 leading-7 text-[#59645b]">An extra pair of hands for the jobs that keep getting pushed aside.</p>
+</div>
 
-    </div>
-  </div>
+</div>
+</div>
 </section>
 
 <!-- HOW IT WORKS -->
-<section id="how-it-works" class="border-y border-slate-200 bg-white py-16 sm:py-20">
-  <div class="mx-auto grid max-w-7xl gap-12 px-5 sm:px-8 lg:grid-cols-2 lg:items-center">
+<section class="py-16 sm:py-20">
+<div class="mx-auto grid max-w-7xl gap-10 px-5 sm:px-8 lg:grid-cols-2">
 
-    <div>
-      <p class="eyebrow text-xs font-extrabold uppercase text-[#218365]">
-        A Simpler Way to Get Support
-      </p>
+<div>
+<p class="eyebrow text-xs font-extrabold uppercase text-[#a56740]">Simple & Flexible</p>
 
-      <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-[#102a26] sm:text-4xl">
-        Extra help, without hiring someone.
-      </h2>
+<h2 class="mt-3 text-3xl font-extrabold text-[#25483b] sm:text-4xl">
+Support that works around your business.
+</h2>
 
-      <p class="mt-5 text-lg leading-8 text-slate-600">
-        You don't need to be big enough for a full-time admin person to get help. Bring in support when the workload calls for it and focus on the work that earns your business money.
-      </p>
+<p class="mt-5 text-lg leading-8 text-[#59645b]">
+You don't need to employ someone full-time to get on top of your admin. Bring in support when you need it, for the tasks you need help with.
+</p>
 
-      <a href="mailto:yourtradiesupp@gmail.com?subject=Admin%20Support%20Enquiry"
-         class="mt-7 inline-block rounded-xl bg-[#12352f] px-5 py-3.5 font-bold text-white hover:bg-[#1b4b40]">
-        Let's Talk About Your Admin →
-      </a>
-    </div>
+<a href="mailto:yourtradiesupp@gmail.com?subject=Admin%20Support%20Enquiry" class="mt-7 inline-flex rounded-xl bg-[#25483b] px-5 py-3.5 font-bold text-white hover:bg-[#35614f]">
+Let's Talk →
+</a>
+</div>
 
-    <div class="space-y-4">
-      <div class="rounded-2xl bg-[#f7f8f6] p-5">
-        <h3 class="font-extrabold">1. Tell me what's piling up</h3>
-        <p class="mt-1 leading-6 text-slate-600">
-          Discuss the admin tasks taking up too much of your time.
-        </p>
-      </div>
+<div class="space-y-4">
+<div class="rounded-2xl border border-[#d9d2c3] bg-[#fbf8f1] p-5">
+<h3 class="font-extrabold text-[#25483b]">1. Have a chat</h3>
+<p class="mt-1 leading-6 text-[#59645b]">Tell me about your business and what's taking up your time.</p>
+</div>
 
-      <div class="rounded-2xl bg-[#f7f8f6] p-5">
-        <h3 class="font-extrabold">2. Choose the support you need</h3>
-        <p class="mt-1 leading-6 text-slate-600">
-          Focus on the tasks that will make the biggest difference.
-        </p>
-      </div>
+<div class="rounded-2xl border border-[#d9d2c3] bg-[#fbf8f1] p-5">
+<h3 class="font-extrabold text-[#25483b]">2. Decide what you need</h3>
+<p class="mt-1 leading-6 text-[#59645b]">We'll work out which tasks I can take care of for you.</p>
+</div>
 
-      <div class="rounded-2xl bg-[#f7f8f6] p-5">
-        <h3 class="font-extrabold">3. Get back to running your business</h3>
-        <p class="mt-1 leading-6 text-slate-600">
-          Free up time while your admin gets the attention it needs.
-        </p>
-      </div>
-    </div>
+<div class="rounded-2xl border border-[#d9d2c3] bg-[#fbf8f1] p-5">
+<h3 class="font-extrabold text-[#25483b]">3. Get time back</h3>
+<p class="mt-1 leading-6 text-[#59645b]">Get on with the work while I help keep the admin moving.</p>
+</div>
+</div>
 
-  </div>
+</div>
 </section>
 
-<!-- SECONDARY JOB LEADS SECTION -->
-<section id="leads" class="py-14 sm:py-16">
-  <div class="mx-auto max-w-7xl px-5 sm:px-8">
+<!-- JOB LEADS: SECONDARY SERVICE -->
+<section id="leads" class="bg-[#dce5d9] py-12 sm:py-14">
+<div class="mx-auto flex max-w-7xl flex-col gap-5 px-5 sm:px-8 lg:flex-row lg:items-center lg:justify-between">
 
-    <div class="flex flex-col gap-6 rounded-3xl border border-emerald-200 bg-emerald-50 p-7 sm:p-9 lg:flex-row lg:items-center lg:justify-between">
+<div class="max-w-3xl">
+<p class="eyebrow text-xs font-extrabold uppercase text-[#58745e]">For Tradies · Also Available</p>
 
-      <div class="max-w-3xl">
-        <p class="eyebrow text-xs font-extrabold uppercase text-[#17664f]">
-          Also Available
-        </p>
+<h2 class="mt-2 text-2xl font-extrabold text-[#25483b] sm:text-3xl">
+Interested in picking up more work?
+</h2>
 
-        <h2 class="mt-3 text-2xl font-extrabold tracking-tight text-[#102a26] sm:text-3xl">
-          Looking for more work?
-        </h2>
+<p class="mt-3 leading-7 text-[#59645b]">
+I can also help connect tradies with potential job opportunities. Let me know your trade, preferred areas and the type of work you're looking for.
+</p>
+</div>
 
-        <p class="mt-3 leading-7 text-slate-700">
-          Alongside admin support, Your Tradie Support can also help connect tradies with potential job opportunities. Tell us your trade, preferred areas and the type of work you're looking for.
-        </p>
-      </div>
+<a href="mailto:yourtradiesupp@gmail.com?subject=Tradie%20Job%20Lead%20Enquiry" class="inline-flex rounded-xl bg-[#25483b] px-5 py-3.5 font-bold text-white hover:bg-[#35614f]">
+Enquire About Leads →
+</a>
 
-      <a href="mailto:yourtradiesupp@gmail.com?subject=Tradie%20Job%20Lead%20Enquiry"
-         class="inline-block shrink-0 rounded-xl border border-emerald-800/20 bg-white px-5 py-3.5 font-bold text-[#12352f] hover:bg-emerald-100">
-        Ask About Job Leads →
-      </a>
-
-    </div>
-  </div>
+</div>
 </section>
 
-<!-- ABOUT -->
-<section id="about" class="bg-[#12352f] py-16 text-white sm:py-20">
-  <div class="mx-auto grid max-w-7xl gap-10 px-5 sm:px-8 lg:grid-cols-[.8fr_1.2fr]">
+<!-- ABOUT US -->
+<section id="about" class="bg-[#25483b] py-16 text-[#fbf8f1] sm:py-20">
+<div class="mx-auto grid max-w-7xl gap-10 px-5 sm:px-8 lg:grid-cols-[.8fr_1.2fr]">
 
-    <div>
-      <p class="eyebrow text-xs font-extrabold uppercase text-emerald-300">
-        Who We Are
-      </p>
+<div>
+<p class="eyebrow text-xs font-extrabold uppercase text-[#d9b58c]">A Bit About Us</p>
 
-      <h2 class="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl">
-        Built around the reality of trade work.
-      </h2>
-    </div>
+<h2 class="mt-3 text-3xl font-extrabold sm:text-4xl">
+Built from understanding the trade industry.
+</h2>
+</div>
 
-    <div class="space-y-4 text-lg leading-8 text-slate-300">
-      <p>
-        Your Tradie Support works alongside tradies to help with the admin that comes with running a trade business — from quotes and invoices to supplier communication and job organisation.
-      </p>
+<div class="space-y-5 text-lg leading-8 text-[#e3e6dc]">
 
-      <p>
-        The goal is straightforward: give busy tradies practical backup behind the scenes, without adding the overhead of another employee. Support is flexible and focused on what your business actually needs.
-      </p>
-    </div>
+<p>G'day, I'm Oliver, and I run Your Tradie Support.</p>
 
-  </div>
+<p>
+After working alongside trade businesses, I saw how much time tradies spend away from the tools dealing with the other side of the job — preparing quotes, chasing supplier pricing, organising materials, answering emails and sending invoices after hours.
+</p>
+
+<p>
+I started Your Tradie Support to give tradies a practical extra pair of hands behind the scenes. I understand that every business works differently, so the support is flexible and focused on what you actually need.
+</p>
+
+<p>
+Whether you're a sole trader trying to keep on top of everything or a growing business that needs some extra backup, I'm here to help make the day-to-day admin easier.
+</p>
+
+<p class="font-bold text-[#d9b58c]">
+You stay on the tools. I'll help take care of the rest.
+</p>
+
+</div>
+</div>
 </section>
 
-<!-- CONTACT US: PHONE AND EMAIL -->
-<section id="contact" class="py-16 sm:py-20">
-  <div class="mx-auto grid max-w-7xl gap-10 px-5 sm:px-8 lg:grid-cols-2 lg:items-center">
+<!-- FACEBOOK -->
+<section class="bg-[#e8e2d5] py-12">
+<div class="mx-auto flex max-w-7xl flex-col gap-4 px-5 sm:px-8 sm:flex-row sm:items-center sm:justify-between">
 
-    <div>
-      <p class="eyebrow text-xs font-extrabold uppercase text-[#218365]">
-        Contact Us
-      </p>
+<div>
+<p class="eyebrow text-xs font-extrabold uppercase text-[#a56740]">Follow Along</p>
+<h2 class="mt-2 text-2xl font-extrabold text-[#25483b]">Check out our work.</h2>
+<p class="mt-2 text-[#59645b]">Visit our Facebook page to see updates, services and what we're up to.</p>
+</div>
 
-      <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-[#102a26] sm:text-4xl">
-        Let's take some admin off your plate.
-      </h2>
+<!-- INSERT YOUR FACEBOOK PAGE URL BELOW -->
+<a href="YOUR_FACEBOOK_PAGE_URL" target="_blank" rel="noopener noreferrer" class="inline-flex rounded-xl bg-[#25483b] px-5 py-3.5 font-bold text-white hover:bg-[#35614f]">
+Visit Our Facebook Page →
+</a>
 
-      <p class="mt-4 max-w-xl text-lg leading-8 text-slate-600">
-        Have a question about admin support or looking for help with your trade business? Get in touch by phone, text or email.
-      </p>
-    </div>
+</div>
+</section>
 
-    <div class="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm sm:p-8">
+<!-- CONTACT -->
+<section id="contact" class="bg-[#fbf8f1] py-16 sm:py-20">
+<div class="mx-auto grid max-w-7xl gap-10 px-5 sm:px-8 lg:grid-cols-2">
 
-      <!-- PHONE NUMBER -->
-      <a href="tel:02108690193"
-         class="mb-4 flex items-center gap-4 rounded-xl bg-slate-50 p-4 transition hover:bg-emerald-50">
+<div>
+<p class="eyebrow text-xs font-extrabold uppercase text-[#a56740]">Get in Touch</p>
 
-        <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-emerald-100 text-xl text-[#17664f]">
-          ☎
-        </div>
+<h2 class="mt-3 text-3xl font-extrabold text-[#25483b] sm:text-4xl">
+Let's take some admin off your plate.
+</h2>
 
-        <div>
-          <p class="text-sm font-semibold text-slate-500">Phone / Text</p>
-          <p class="mt-1 text-lg font-extrabold text-[#12352f]">
-            021 086 90193
-          </p>
-          <p class="mt-1 text-sm text-slate-500">Tap to call</p>
-        </div>
-      </a>
+<p class="mt-4 text-lg leading-8 text-[#59645b]">
+Have a question or want to talk about support for your business? Give me a call, send a text or drop me an email.
+</p>
+</div>
 
-      <!-- EMAIL ADDRESS -->
-      <a href="mailto:yourtradiesupp@gmail.com"
-         class="flex items-center gap-4 rounded-xl bg-slate-50 p-4 transition hover:bg-emerald-50">
+<div class="rounded-3xl border border-[#ded8cc] bg-[#f4f0e7] p-7 sm:p-8">
 
-        <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-emerald-100 text-xl text-[#17664f]">
-          ✉
-        </div>
+<a href="tel:02108690193" class="mb-4 flex items-center gap-4 rounded-xl bg-[#fbf8f1] p-4 hover:bg-[#e8e2d5]">
+<div class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#dce5d9] text-xl">☎</div>
+<div>
+<p class="text-sm text-[#6e776d]">Phone / Text</p>
+<p class="mt-1 text-lg font-extrabold text-[#25483b]">021 086 90193</p>
+<p class="mt-1 text-sm text-[#6e776d]">Tap to call</p>
+</div>
+</a>
 
-        <div class="min-w-0">
-          <p class="text-sm font-semibold text-slate-500">Email</p>
-          <p class="mt-1 break-all font-extrabold text-[#12352f]">
-            yourtradiesupp@gmail.com
-          </p>
-          <p class="mt-1 text-sm text-slate-500">Tap to send an email</p>
-        </div>
-      </a>
+<a href="mailto:yourtradiesupp@gmail.com" class="flex items-center gap-4 rounded-xl bg-[#fbf8f1] p-4 hover:bg-[#e8e2d5]">
+<div class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#dce5d9] text-xl">✉</div>
+<div class="min-w-0">
+<p class="text-sm text-[#6e776d]">Email</p>
+<p class="mt-1 break-all font-extrabold text-[#25483b]">yourtradiesupp@gmail.com</p>
+<p class="mt-1 text-sm text-[#6e776d]">Tap to send an email</p>
+</div>
+</a>
 
-      <p class="mt-5 text-sm text-slate-500">
-        Your Tradie Support · New Zealand
-      </p>
+<a href="mailto:yourtradiesupp@gmail.com?subject=Your%20Tradie%20Support%20Enquiry" class="mt-5 block rounded-xl bg-[#25483b] px-5 py-4 text-center font-bold text-white hover:bg-[#35614f]">
+Send an Enquiry
+</a>
 
-      <a href="mailto:yourtradiesupp@gmail.com?subject=Admin%20Support%20Enquiry"
-         class="mt-5 block rounded-xl bg-[#12352f] px-5 py-4 text-center font-bold text-white transition hover:bg-[#1b4b40]">
-        Email Your Tradie Support
-      </a>
-
-    </div>
-  </div>
+</div>
+</div>
 </section>
 
 </main>
 
 <!-- FOOTER -->
-<footer class="border-t border-slate-200 bg-white">
-  <div class="mx-auto flex max-w-7xl flex-col gap-3 px-5 py-7 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between sm:px-8">
-
-    <div class="flex items-center gap-3">
-      <img src="logo.png"
-           alt="Your Tradie Support logo"
-           class="h-9 w-auto"
-           onerror="this.style.display='none'">
-
-      <p class="font-bold text-slate-800">
-        Your Tradie Support
-      </p>
-    </div>
-
-    <p>Practical admin support for busy tradies across New Zealand.</p>
-
-  </div>
+<footer class="border-t border-[#d9d2c3] bg-[#f4f0e7]">
+<div class="mx-auto flex max-w-7xl flex-col gap-3 px-5 py-7 text-sm text-[#6e776d] sm:flex-row sm:items-center sm:justify-between sm:px-8">
+<div class="flex items-center gap-3">
+<img src="logo.png" alt="Your Tradie Support logo" class="h-9 w-auto">
+<p class="font-bold text-[#25483b]">Your Tradie Support</p>
+</div>
+<p>Practical admin support for busy tradies across New Zealand.</p>
+</div>
 </footer>
 
 </body>
