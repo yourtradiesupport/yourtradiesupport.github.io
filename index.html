@@ -117,13 +117,26 @@
     }
   </style>
 
-  <!-- Google Ads tag -->
+  <!-- Google Ads tag and conversion tracking -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18571950788"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'AW-18571950788');
+
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+        'send_to': 'AW-18571950788/JYVPCIfAiLgdEMT15ZdF',
+        'event_callback': callback
+      });
+      return false;
+    }
   </script>
 </head>
 
@@ -268,7 +281,7 @@
           You don't need to employ someone full-time to get on top of your admin. Bring in support when you need it, for the tasks you need help with.
         </p>
 
-        <a href="mailto:yourtradiesupp@gmail.com?subject=Admin%20Support%20Enquiry"
+        <a href="mailto:yourtradiesupp@gmail.com?subject=Admin%20Support%20Enquiry" onclick="return gtag_report_conversion(this.href)"
            class="inline-block bg-[#ef7925] text-white font-bold px-7 py-4 rounded-lg hover:bg-[#d96516]">
           Ask About Admin Support →
         </a>
@@ -341,7 +354,7 @@
           Whether you need a new website, help with Facebook or just someone to keep your online presence updated, we can work through it together.
         </p>
 
-        <a href="mailto:yourtradiesupp@gmail.com?subject=Marketing%20Support%20Enquiry"
+        <a href="mailto:yourtradiesupp@gmail.com?subject=Marketing%20Support%20Enquiry" onclick="return gtag_report_conversion(this.href)"
            class="inline-block bg-[#ef7925] text-white font-bold px-7 py-4 rounded-lg hover:bg-[#d96516]">
           Ask About Marketing Support →
         </a>
@@ -425,7 +438,7 @@
       <div class="max-w-2xl mx-auto bg-white rounded-2xl p-6 md:p-8 shadow-sm">
 
         <!-- PHONE -->
-        <a href="tel:02108690193"
+        <a href="tel:02108690193" onclick="return gtag_report_conversion('tel:02108690193')"
            class="contact-card bg-[#f7f8fa] mb-4">
 
           <div class="w-12 h-12 rounded-xl bg-[#ffeadb] flex items-center justify-center flex-shrink-0">
@@ -442,7 +455,7 @@
 
 
         <!-- EMAIL -->
-        <a href="mailto:yourtradiesupp@gmail.com"
+        <a href="mailto:yourtradiesupp@gmail.com" onclick="return gtag_report_conversion(this.href)"
            class="contact-card bg-[#eaf1f8] mb-4">
 
           <div class="w-12 h-12 flex items-center justify-center flex-shrink-0">
@@ -496,7 +509,7 @@
 
 
         <!-- SEND AN ENQUIRY -->
-        <a href="mailto:yourtradiesupp@gmail.com?subject=Your%20Tradie%20Support%20Enquiry"
+        <a href="mailto:yourtradiesupp@gmail.com?subject=Your%20Tradie%20Support%20Enquiry" onclick="return gtag_report_conversion(this.href)"
            class="block w-full text-center bg-[#ef7925] text-white font-bold py-4 px-6 rounded-xl hover:bg-[#d96516] transition">
           Send an Enquiry →
         </a>
